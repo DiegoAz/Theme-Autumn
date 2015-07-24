@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>author</key>
+	<string>Diego Alfonso Alvarez Alvarez</string>
+	<key>comment</key>
+	<string>A theme inspired by autumn colors</string>
+	<key>name</key>
+	<string>Autumn - Widget Theme</string>
+	<key>settings</key>
+	<array>
+		<dict>
+			<key>settings</key>
+			<dict>
+				<key>background</key>
+				<string>#ffffff</string>
+				<key>caret</key>
+				<string>#2a2a2a</string>
+				<key>foreground</key>
+				<string>#292929</string>
+				<key>invisibles</key>
+				<string>#7b6f65</string>
+				<key>selection</key>
+				<string>#ffbb5c</string>
+				<key>selectionBorder</key>
+				<string>#ffbb5c</string>				
+			</dict>
+		</dict>
+	</array>
+</dict>
+</plist>
