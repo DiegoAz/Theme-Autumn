@@ -4,6 +4,8 @@
 
   This is a theme and color scheme inspired by autumn colors. It was made with the help of [Flatland](https://github.com/thinkpixellab/flatland) and the Default theme. The above because I preserve the tabs, scrollbars and search text field from the Default theme because I like.
 
+  This has support for [Git Gutter] (https://packagecontrol.io/packages/GitGutter) 
+
 ## Screenshot
 
   ![Screenshot](https://github.com/DiegoAz/Theme-Autumn/blob/master/screenshot.gif)
