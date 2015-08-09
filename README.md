@@ -8,7 +8,7 @@
 
 ## Screenshot
 
-  ![Screenshot](https://github.com/DiegoAz/Theme-Autumn/blob/master/screenshot.gif)
+  ![Screenshot](screenshot.gif)
 
 
 ## Installation
