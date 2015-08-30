@@ -1,0 +1,7 @@
+Hi!
+
+I have added support to Oracle PL SQL package.
+
+  https://packagecontrol.io/packages/Oracle%20PL%20SQL
+    
+  Install this package and Set Syntax (PL/SQL) Oracle to the pl/sql files.

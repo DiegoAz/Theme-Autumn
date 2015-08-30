@@ -2,13 +2,12 @@
 
 ## About
 
-  This is a theme and color scheme inspired by autumn colors. It was made with the help of [Flatland](https://github.com/thinkpixellab/flatland) and the Default theme. The above because I preserve the tabs, scrollbars and search text field from the Default theme because I like.
-
-  This has support for [Git Gutter] (https://packagecontrol.io/packages/GitGutter) 
+  This is a theme and color scheme inspired by autumn colors. It was made with the help of [Flatland](https://github.com/thinkpixellab/flatland) and the Default theme. The above because I preserve the tabs, scrollbars and search text field from the Default theme because I like.  
 
 ## Screenshot
 
   ![Screenshot](screenshot.gif)
+  ![Screenshot](screenshot.png)  
 
 
 ## Installation
@@ -45,6 +44,14 @@
     "color_scheme": "Packages/Theme - Autumn/Autumn.tmTheme"
   }
   ```
+
+## Support
+
+  - [Git Gutter](https://packagecontrol.io/packages/GitGutter)
+  - [Oracle PL SQL](https://packagecontrol.io/packages/Oracle%20PL%20SQL)
+
+    Install this package and Set Syntax (PL/SQL) Oracle to the pl/sql files.
+
 
 ## License
 

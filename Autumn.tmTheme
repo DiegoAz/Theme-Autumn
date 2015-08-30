@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-
 <plist version="1.0"> 
 <dict>
 	<key>name</key>
@@ -34,82 +33,75 @@
 				<string>#3f3523</string>
 			</dict>
 		</dict>
-			
-
 		<!-- BracketHighlighter plugin -->
-
-		 		<dict>
-            <key>name</key>
-            <string>Brackets default</string>
-            <key>scope</key>
-            <string>brackethighlighter.default, brackethighlighter.unmatched</string>
-            <key>settings</key>
-            <dict>
-                <key>foreground</key>
-                <string>#f58f00</string>
-            </dict>
-        </dict>
-
-        <!-- GitGutter Plugin -->
-       
-<dict>
-  <key>name</key>
-  <string>GitGutter deleted</string>
-  <key>scope</key>
-  <string>markup.deleted.git_gutter</string>
-  <key>settings</key>
-  <dict>
-    <key>foreground</key>
-    <string>#ffac70</string>
-  </dict>
-</dict>
-<dict>
-  <key>name</key>
-  <string>GitGutter inserted</string>
-  <key>scope</key>
-  <string>markup.inserted.git_gutter</string>
-  <key>settings</key>
-  <dict>
-    <key>foreground</key>
-    <string>#ff9b0f</string>
-  </dict>
-</dict>
-<dict>
-  <key>name</key>
-  <string>GitGutter changed</string>
-  <key>scope</key>
-  <string>markup.changed.git_gutter</string>
-  <key>settings</key>
-  <dict>
-    <key>foreground</key>
-    <string>#dedb2a</string>
-  </dict>
-</dict>
-<dict>
-  <key>name</key>
-  <string>GitGutter ignored</string>
-  <key>scope</key>
-  <string>markup.ignored.git_gutter</string>
-  <key>settings</key>
-  <dict>
-    <key>foreground</key>
-    <string>#7b6f65</string>
-  </dict>
-</dict>
-<dict>
-  <key>name</key>
-  <string>GitGutter untracked</string>
-  <key>scope</key>
-  <string>markup.untracked.git_gutter</string>
-  <key>settings</key>
-  <dict>
-    <key>foreground</key>
-    <string>#c4db32</string>
-  </dict>
-</dict>
-       
-    <!-- COMMENTS -->
-
+		<dict>
+		  <key>name</key>
+		  <string>Brackets default</string>
+		  <key>scope</key>
+		  <string>brackethighlighter.default, brackethighlighter.unmatched</string>
+		  <key>settings</key>
+		  <dict>
+		      <key>foreground</key>
+		      <string>#f58f00</string>
+		  </dict>
+		</dict>
+		 <!-- GitGutter Plugin -->
+		<dict>
+		  <key>name</key>
+		  <string>GitGutter deleted</string>
+		  <key>scope</key>
+		  <string>markup.deleted.git_gutter</string>
+		  <key>settings</key>
+		  <dict>
+		    <key>foreground</key>
+		    <string>#ffac70</string>
+		  </dict>
+		</dict>
+		<dict>
+		  <key>name</key>
+		  <string>GitGutter inserted</string>
+		  <key>scope</key>
+		  <string>markup.inserted.git_gutter</string>
+		  <key>settings</key>
+		  <dict>
+		    <key>foreground</key>
+		    <string>#ff9b0f</string>
+		  </dict>
+		</dict>
+		<dict>
+		  <key>name</key>
+		  <string>GitGutter changed</string>
+		  <key>scope</key>
+		  <string>markup.changed.git_gutter</string>
+		  <key>settings</key>
+		  <dict>
+		    <key>foreground</key>
+		    <string>#dedb2a</string>
+		  </dict>
+		</dict>
+		<dict>
+		  <key>name</key>
+		  <string>GitGutter ignored</string>
+		  <key>scope</key>
+		  <string>markup.ignored.git_gutter</string>
+		  <key>settings</key>
+		  <dict>
+		    <key>foreground</key>
+		    <string>#7b6f65</string>
+		  </dict>
+		</dict>
+		<dict>
+		  <key>name</key>
+		  <string>GitGutter untracked</string>
+		  <key>scope</key>
+		  <string>markup.untracked.git_gutter</string>
+		  <key>settings</key>
+		  <dict>
+		    <key>foreground</key>
+		    <string>#c4db32</string>
+		  </dict>
+		</dict>
+		<!-- COMMENTS -->
 		<dict>
 			<key>name</key>
 			<string>Comment</string>
@@ -123,9 +115,7 @@
 				<string>#7b6f65</string>				
 			</dict>
 		</dict>
-
 		<!-- META -->
-
 		<dict>
 			<key>name</key>
 			<string>Storage type class</string>
@@ -137,9 +127,7 @@
 				<string>#ffad0a</string>
 			</dict>
 		</dict>		
-
 		<!-- STRINGS -->
-
 		<dict>
 			<key>name</key>
 			<string>Strings</string>
@@ -151,10 +139,7 @@
 				<string>#ffb885</string>			
 			</dict>
 		</dict>
-		
-
 		<!-- Punctuation -->
-
 		<dict>
 			<key>name</key>
 			<string>prperty name</string>
@@ -166,10 +151,7 @@
 				<string>#ffa05c</string>
 			</dict>
 		</dict>	
-		
-
 		<!-- CONSTANTS -->        
-		
 		<dict>
 			<key>name</key>
 			<string>constant</string>
@@ -192,9 +174,7 @@
 				<string>#ffac70</string>				
 			</dict>
 		</dict>
-		
 		<!-- ENTITY -->
-
 		<dict>
 			<key>name</key>
 			<string>entity type class</string>
@@ -228,10 +208,7 @@
 				<string>#dedb2a</string>
 			</dict>
 		</dict>
-		
-
 		<!-- invalid/deprecated -->
-
 		<dict>
 			<key>name</key>
 			<string>invalid</string>
@@ -245,10 +222,7 @@
 				<string>#ec8c46</string>
 			</dict>
 		</dict>
-
 		<!-- KEYWORDS -->
-
-		
 		<dict>
 			<key>name</key>
 			<string>Keyword</string>
@@ -271,10 +245,7 @@
 				<string>#ffa05c</string>
 			</dict>
 		</dict>
-		
-	
 		<!-- STORAGE -->
-
 		<dict>
 			<key>name</key>
 			<string>storage type</string>
@@ -308,9 +279,7 @@
 				<string>#dedb2a</string>
 			</dict>
 		</dict>		
-
 		<!-- SUPPORT -->
-
 		<dict>
 			<key>name</key>
 			<string>Support function</string>
@@ -344,9 +313,7 @@
 				<string>#ffac70</string>
 			</dict>
 		</dict>
-
 		<!-- VARIABLE -->
-		
 		<dict>
 			<key>name</key>
 			<string>Variable</string>
@@ -391,12 +358,7 @@
 				<string>#ffc499</string>
 			</dict>
 		</dict>
-
-
-
-
 		<!-- DOCTYPE -->
-
 		<dict>
 			<key>name</key>
 			<string>Doctype text</string>
@@ -408,10 +370,9 @@
 				<string>#ffad0a</string>
 			</dict>
 		</dict>
-
 		<dict>
 			<key>name</key>
-			<string>DTDs/<!></string>
+			<string>DTDs</string>
 			<key>scope</key>
 			<string>text.html.basic meta.tag.sgml.html meta.tag.sgml.doctype.html string.quoted.double.doctype.identifiers-and-DTDs.html, meta.tag.sgml.doctype.xml variable.documentroot.xml, meta.tag.sgml.doctype.xml </string>
 			<key>settings</key>
@@ -420,9 +381,7 @@
 				<string>#ffb41f</string>
 			</dict>
 		</dict>
-
 		<!-- TAGS -->
-
 		<dict>
 			<key>name</key>
 			<string>Tag name</string>
@@ -456,14 +415,7 @@
 				<string>#dedb2a</string>
 			</dict>
 		</dict>
-
 		<!-- CSS-->
-
-		<!-- a5e724, dedb2a, dedb2a, e5ff70 -->
-		<!-- ffac70 -->
-		<!-- ffb885 -->
-		<!-- ffc499 -->
-
 		<dict>
 			<key>name</key>
 			<string>meta selector</string>
@@ -530,7 +482,6 @@
 				<string>#ffb885</string>
 			</dict>
 		</dict>
-		
 		<dict>
 			<key>name</key>
 			<string>pseudo class</string>
@@ -553,7 +504,6 @@
 				<string>#ff9b0f</string>
 			</dict>
 		</dict>
-
 		<dict>
 			<key>name</key>
 			<string>at rule @media</string>
@@ -565,7 +515,6 @@
 				<string>#ffad0a</string>
 			</dict>
 		</dict>
-
 		<dict>
 			<key>name</key>
 			<string>Keyword logic media</string>
@@ -577,9 +526,7 @@
 				<string>#ffb41f</string>				
 			</dict>
 		</dict>		
-
 		<!-- STYLUS -->
-		
 		<dict>
 			<key>name</key>
 			<string>property name</string>
@@ -657,10 +604,7 @@
 				<string>#ffa21f</string>				
 			</dict>
 		</dict>
-		
-		
 		<!-- JAVASCRIPT -->
-		
 		<dict>
 			<key>name</key>
 			<string>delimiter period</string>
@@ -694,12 +638,7 @@
 				<string>#dedb2a</string>
 			</dict>
 		</dict>		
-		
-		
-
 		<!-- JAVA -->
-
-
 		<dict>
 			<key>name</key>
 			<string>storage, keyword new</string>
@@ -711,7 +650,6 @@
 				<string>#ffc499</string>
 			</dict>
 		</dict>
-		
 		<dict>
 			<key>name</key>
 			<string>others storage type</string>
@@ -756,7 +694,6 @@
 				<string>#ffac70</string>
 			</dict>
 		</dict>
-		
 		<dict>
 			<key>name</key>
 			<string>keyword annotation</string>
@@ -768,10 +705,7 @@
 				<string>#87796e</string>
 			</dict>
 		</dict>
-
-		
 		<!-- JSON -->
-
 		<dict>
 			<key>name</key>
 			<string>punctuation</string>
@@ -783,7 +717,6 @@
 				<string>#ffac70</string>
 			</dict>
 		</dict>
-
 		<dict>
 			<key>name</key>
 			<string>strings</string>
@@ -795,10 +728,7 @@
 				<string>#ffc499</string>
 			</dict>
 		</dict>
-		
-	
 		<!-- MARKDOWN -->
-
 		<dict>
 			<key>name</key>
 			<string>Markup: Heading (#)</string>
@@ -832,7 +762,6 @@
 				<string>#ffa05c</string>				
 			</dict>
 		</dict>
-		
 		<dict>
 			<key>name</key>
 			<string>punctuation bold</string>
@@ -844,7 +773,6 @@
 				<string>#ffac70</string>
 			</dict>
 		</dict>
-
 		<dict>
 			<key>name</key>
 			<string>punctuation heading</string>
@@ -856,8 +784,6 @@
 				<string>#ff9910</string>
 			</dict>
 		</dict>
-
-
 			<dict>
 			<key>name</key>
 			<string>heading section</string>
@@ -869,11 +795,7 @@
 				<string>#dedb2a</string>
 			</dict>
 		</dict>
-
-		
-
 		<!-- xml -->		
-
 		<dict>
 			<key>name</key>
 			<string>some punctuation</string>
@@ -907,9 +829,7 @@
 				<string>#dedb2a</string>			
 			</dict>
 		</dict>
-
 		<!-- SQL -->
-
 		<dict>
 			<key>name</key>
 			<string>keywords</string>
@@ -931,7 +851,41 @@
 				<key>foreground</key>
 				<string>#ffac70</string>
 			</dict>
-		</dict>		
+		</dict>
+		<!-- PL/SQL ORACLE -->
+		<dict>
+			<key>name</key>
+			<string>keywords</string>
+			<key>scope</key>
+			<string>keyword.other.oracle, keyword.other.sql.oracle</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#ffac70</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>keywords</string>
+			<key>scope</key>
+			<string>meta.package.oracle keyword.other.oracle, meta.procedure.oracle keyword.other.oracle</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#dedb2a</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>keywords</string>
+			<key>scope</key>
+			<string>meta.package.oracle keyword.other.oracle</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#c4db32</string>
+			</dict>
+		</dict>				
 	</array>	
 </dict>
 </plist>
