@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>name</key>
-	<string>Autumn</string>
+	<string>Autumn Orange</string>
 	<key>settings</key>
 	<array>
 		<dict>
@@ -148,7 +148,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#ffa05c</string>
+				<string>#ff9b0f</string>
 			</dict>
 		</dict>
 		<!-- CONSTANTS -->
@@ -242,7 +242,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#ffa05c</string>
+				<string>#ff9b0f</string>
 			</dict>
 		</dict>
 		<!-- STORAGE -->

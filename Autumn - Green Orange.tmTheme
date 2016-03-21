@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>name</key>
-	<string>Autumn</string>
+	<string>Autumn Green Orange</string>
 	<key>settings</key>
 	<array>
 		<dict>
@@ -148,7 +148,18 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#ffa05c</string>
+				<string>#dedb2a</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Punctuation</string>
+			<key>scope</key>
+			<string>punctuation.terminator, punctuation.separator, punctuation.delimiter.comma</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#ff9b0f</string>
 			</dict>
 		</dict>
 		<!-- CONSTANTS -->
@@ -242,7 +253,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#ffa05c</string>
+				<string>#dedb2a</string>
 			</dict>
 		</dict>
 		<!-- STORAGE -->
