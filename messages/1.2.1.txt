@@ -1,0 +1,8 @@
+-------------------------------------------------------
+Version: 1.2.1
+https://packagecontrol.io/packages/Theme%20-%20Autumn
+-------------------------------------------------------
+
+ - Note about Sublime Text 3 (Build 3143)
+
+  Because this theme was referencing images in the Theme - Default that no longer exist you need to download [this](Theme%20-%20Default.zip) file and unzip the folder into the Sublime packages directory. It is the Theme - Default before build 3143. See [this](https://forum.sublimetext.com/t/very-colorful-tabs/31244) post to get more information. 
