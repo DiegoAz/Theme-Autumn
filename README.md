@@ -53,7 +53,7 @@
 
 ## Note about Sublime Text 3 (Build 3143)
 
-  Because this theme was referencing images in the Theme - Default that no longer exist you need to download [this]() file and unzip the folder into the Sublime packages directory. It is the Theme - Default before build 3143. See [this](https://forum.sublimetext.com/t/very-colorful-tabs/31244) post to get more information. 
+  Because this theme was referencing images in the Theme - Default that no longer exist you need to download [this](https://github.com/DiegoAz/Theme-Autumn/blob/master/Theme%20-%20Default.zip) file and unzip the folder into the Sublime packages directory. It is the Theme - Default before build 3143. See [this](https://forum.sublimetext.com/t/very-colorful-tabs/31244) post to get more information. 
 
 ## License
 
