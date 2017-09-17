@@ -5,15 +5,7 @@ https://packagecontrol.io/packages/Theme%20-%20Autumn
 
 Hi! I hope you like the theme and the color scheme options.
 
-To activate it include the following in the Sublime user settings file. That file appear through the Sublime Menu option: Preferences > Settings - User
-
-{
-      ...  (another settings)
-
-    "theme": "Autumn.sublime-theme",
-    "color_scheme": "Packages/Theme - Autumn/Autumn.tmTheme"
-    // "color_scheme": "Packages/Theme - Autumn/Autumn - Orange.tmTheme"
-}
+Visit https://packagecontrol.io/packages/Theme%20-%20Autumn to know how to active the theme and the different options.
 
 If you have any suggestion to improve it visit the issues page.
 

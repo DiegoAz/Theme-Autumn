@@ -16,7 +16,7 @@
 				<key>foreground</key>
 				<string>#ffc499</string>
 				<key>gutterForeground</key>
-				<string>#fddcc4</string>
+				<string>#7b6f65</string>
 				<key>invisibles</key>
 				<string>#7b6f65</string>
 				<key>lineHighlight</key>
@@ -106,7 +106,7 @@
 			<key>name</key>
 			<string>Comment</string>
 			<key>scope</key>
-			<string>comment.block, comment.line</string>
+			<string>comment.block, comment.line, text.pug comment.unbuffered.block.pug</string>
 			<key>settings</key>
 			<dict>
 				<!-- <key>background</key>
@@ -299,7 +299,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#dedb2a</string>
+				<string>#ffa05c</string>
 			</dict>
 		</dict>
 		<dict>
@@ -363,11 +363,22 @@
 			<key>name</key>
 			<string>Doctype text</string>
 			<key>scope</key>
-			<string>text.html.basic meta.tag.sgml.html meta.tag.sgml.doctype.html, text.html.basic meta.tag.sgml.html punctuation.definition.tag.html, meta.tag.sgml.doctype.xml punctuation.definition.tag.begin.xml, text.xml meta.tag.preprocessor.xml entity.name.tag.xml, meta.tag.preprocessor.xml punctuation.definition.tag.begin.xml, punctuation.section.embedded.begin.php, text.html.basic meta.tag.sgml.html meta.tag.sgml.doctype.html entity.name.tag.doctype.html </string>
+			<string>text.html.basic meta.tag.sgml.html meta.tag.sgml.doctype.html, text.html.basic meta.tag.sgml.html punctuation.definition.tag.html, meta.tag.sgml.doctype.xml punctuation.definition.tag.begin.xml, punctuation.section.embedded.begin.php, text.html.basic meta.tag.sgml.html meta.tag.sgml.doctype.html entity.name.tag.doctype.html </string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
 				<string>#ffad0a</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Doctype text</string>
+			<key>scope</key>
+			<string>text.xml meta.tag.preprocessor.xml entity.name.tag.xml, text.xml meta.tag.preprocessor.xml punctuation.definition.tag.begin.xml, text.xml meta.tag.preprocessor.xml punctuation.definition.tag.end.xml</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#dedb2a</string>
 			</dict>
 		</dict>
 		<dict>
@@ -420,7 +431,7 @@
 			<key>name</key>
 			<string>meta selector</string>
 			<key>scope</key>
-			<string> meta.selector.css</string>
+			<string> meta.selector.css, keyword.operator.selector.stylus</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
@@ -508,7 +519,7 @@
 			<key>name</key>
 			<string>at rule @media</string>
 			<key>scope</key>
-			<string>keyword.control.at-rule.media.css</string>
+			<string>keyword.control.at-rule.media.css, meta.selector.stylus variable.language.stylus</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
@@ -660,6 +671,72 @@
 				<string>#ffad0a</string>
 			</dict>
 		</dict>
+		<dict>
+			<key>name</key>
+			<string>this</string>
+			<key>scope</key>
+			<string>variable.language.this.js</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#ffad0a</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>this</string>
+			<key>scope</key>
+			<string>source.js meta.group.braces.round meta.group.braces.curly meta.group.braces.round meta.group.braces.curly constant.other.object.key.js string.unquoted.label.js</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#dedb2a</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>this</string>
+			<key>scope</key>
+			<string>source.js meta.group.braces.round meta.group.braces.curly meta.group.braces.round meta.group.braces.curly meta.group.braces.curly constant.other.object.key.js string.unquoted.label.js</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#ffac70</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>this</string>
+			<key>scope</key>
+			<string>variable.function.js</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#ff9b0f</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>this</string>
+			<key>scope</key>
+			<string>meta.function-call.method.js meta.group.js meta.block.js meta.function-call.method.js meta.group.js meta.object-literal.js meta.object-literal.key.js</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#dedb2a</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>this</string>
+			<key>scope</key>
+			<string>meta.function-call.method.js meta.group.js meta.block.js meta.function-call.method.js meta.group.js meta.object-literal.js meta.object-literal.js meta.object-literal.key.js</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#ffa05c</string>
+			</dict>
+		</dict>
 		<!-- JAVA -->
 		<dict>
 			<key>name</key>
@@ -698,7 +775,7 @@
 			<key>name</key>
 			<string>other srorage modifiers</string>
 			<key>scope</key>
-			<string> storage.type.annotation.java, meta.method.java meta.throwables.java storage.modifier.java, meta.method.java meta.method.body.java storage.modifier.java</string>
+			<string> meta.method.java meta.throwables.java storage.modifier.java, meta.method.java meta.method.body.java storage.modifier.java</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
@@ -720,11 +797,22 @@
 			<key>name</key>
 			<string>annotations</string>
 			<key>scope</key>
-			<string>storage.type.annotation.java</string>
+			<string>storage.type.annotation, meta.declaration.annotation , meta.declaration.annotation string.quoted.single, meta.declaration.annotation string.quoted.single punctuation.definition.string.begin, meta.declaration.annotation string.quoted.single punctuation.definition.string.end, meta.declaration.annotation string.quoted.double, meta.declaration.annotation string.quoted.double punctuation.definition.string.begin, meta.declaration.annotation string.quoted.double punctuation.definition.string.end, meta.declaration.annotation.java constant.other.key.java, meta.declaration.annotation.java storage.type.java, meta.declaration.annotation.java constant.other.java, meta.declaration.annotation.java keyword.operator.assignment.java, meta.declaration.annotation.java keyword.operator.dereference.java, meta.declaration.annotation.java constant.language.java, meta.declaration.annotation.java constant.numeric.java, meta.declaration.annotation.java punctuation.separator.property.java, source.java meta.class.java meta.class.body.java comment.block.documentation.javadoc meta.documentation.comment.javadoc text.html meta.tag.other.html entity.name.tag.other.html, source.java meta.class.java meta.class.body.java comment.block.documentation.javadoc meta.documentation.comment.javadoc text.html meta.tag.other.html punctuation.definition.tag.begin.html, source.java meta.class.java meta.class.body.java comment.block.documentation.javadoc meta.documentation.comment.javadoc text.html meta.tag.other.html punctuation.definition.tag.end.html, source.java meta.class.java meta.class.body.java comment.block.documentation.javadoc meta.documentation.comment.javadoc text.html meta.tag.inline.any.html entity.name.tag.inline.any.html, source.java meta.class.java meta.class.body.java comment.block.documentation.javadoc meta.documentation.comment.javadoc text.html meta.tag.inline.any.html punctuation.definition.tag.begin.html, source.java meta.class.java meta.class.body.java comment.block.documentation.javadoc meta.documentation.comment.javadoc text.html meta.tag.inline.any.html punctuation.definition.tag.end.html, source.java comment.block.documentation.javadoc meta.documentation.comment.javadoc text.html meta.tag.block.any.html entity.name.tag.block.any.html, source.java comment.block.documentation.javadoc meta.documentation.comment.javadoc text.html meta.tag.block.any.html punctuation.definition.tag.begin.html, source.java comment.block.documentation.javadoc meta.documentation.comment.javadoc text.html meta.tag.block.any.html punctuation.definition.tag.end.html, source.java comment.block.documentation.javadoc meta.documentation.comment.javadoc text.html meta.directive.link.javadoc keyword.other.documentation.directive.link.javadoc</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#ffac70</string>
+				<string>#7b6f65</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>annotations</string>
+			<key>scope</key>
+			<string>source.java-props keyword.other.java-props</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#ffc499</string>
 			</dict>
 		</dict>
 		<dict>
@@ -738,17 +826,7 @@
 				<string>#87796e</string>
 			</dict>
 		</dict>
-		<dict>
-			<key>name</key>
-			<string>class name</string>
-			<key>scope</key>
-			<string>source.java meta.class.java meta.class.identifier.java entity.name.type.class.java</string>
-			<key>settings</key>
-			<dict>
-				<key>foreground</key>
-				<string>#ffa05c</string>
-			</dict>
-		</dict>
+		
 		<!-- JSON -->
 		<dict>
 			<key>name</key>
@@ -897,6 +975,30 @@
 				<string>#c4db32</string>
 			</dict>
 		</dict>
+		<!-- gradle -->
+		<dict>
+			<key>name</key>
+			<string>another keywords</string>
+			<key>scope</key>
+			<string>source.gradle support.type, source.gradle support.function</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#ffa05c</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>another keywords</string>
+			<key>scope</key>
+			<string>support.type.project.subprojects.gradle, support.type.project.allprojects.gradle</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#dedb2a</string>
+			</dict>
+		</dict>
+				
 	</array>
 </dict>
 </plist>
