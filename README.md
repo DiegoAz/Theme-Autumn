@@ -46,7 +46,7 @@
     "theme": "Autumn.sublime-theme",
     "color_scheme": "Packages/Theme - Autumn/Autumn.tmTheme"
 
-    //options - See screenshot to see the options 
+    //options - See screenshot to see the options activated
 
     "theme-autumn-flat-buttons": true,
     "theme-autumn-orange-folders": true,
