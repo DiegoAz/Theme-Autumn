@@ -7,9 +7,11 @@
 ## Screenshot
 
   ![Screenshot](screenshot.gif)
-  
 
-  ![Screenshot2](Screenshot2.png)
+
+  ![Screenshot2](Screenshot2.PNG)
+
+
 
 ## Installation
 
