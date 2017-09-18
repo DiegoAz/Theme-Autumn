@@ -11,8 +11,6 @@
 
   ![Screenshot2](Screenshot2.PNG)
 
-
-
 ## Installation
 
   Like others packages there are several ways to install it.
@@ -46,7 +44,7 @@
     "theme": "Autumn.sublime-theme",
     "color_scheme": "Packages/Theme - Autumn/Autumn.tmTheme"
 
-    //options - See screenshot to see the options activated
+    //options - Look at the png screenshot to see the next options activated
 
     "theme-autumn-flat-buttons": true,
     "theme-autumn-orange-folders": true,
@@ -59,6 +57,10 @@
   - Using the Preferences menu option and click: Theme... 
   - Press Ctrl/⌘ + ⇧ + P to open Command Palette, and search for UI:Select Theme
 
+## File Icons
+
+  If you want to add file icons you could install the package [A file Icon](https://packagecontrol.io/packages/A%20File%20Icon)
+
 ## Support
 
   - [Git Gutter](https://packagecontrol.io/packages/GitGutter)
@@ -70,11 +72,6 @@
 
   Because this theme was referencing images in the Theme - Default that no longer exist I have included the classic Sublime Default theme inside this theme. See [this](https://forum.sublimetext.com/t/very-colorful-tabs/31244) post to get more information.
 
-
 ## License
 
   This package is licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/)
-
-
-
-
