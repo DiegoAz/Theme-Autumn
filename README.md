@@ -49,7 +49,7 @@
     "theme-autumn-flat-buttons": true,
     "theme-autumn-orange-folders": true,
     // "theme-autumn-gray-folders": true,
-    "theme-autumn-roboto-font": true, // You need to install Roboto Font and Roboto Font Medium 
+    "theme-autumn-roboto-font": true, // You need to install Roboto Mono and Roboto Mono Medium
   }
   ```
   Another options to activate the theme are:
