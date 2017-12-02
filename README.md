@@ -82,3 +82,4 @@
 
   [![Click here to lend your support to: Theme - Autumn and make a donation at pledgie.com!](https://pledgie.com/campaigns/35244.png?skin_name=chrome)](https://pledgie.com/campaigns/35244)
 
+  Thanks for your support. 
