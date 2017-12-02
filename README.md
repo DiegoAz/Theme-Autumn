@@ -75,3 +75,10 @@
 ## License
 
   This package is licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/)
+
+## Donations
+
+  Hi! If you want you can make a donation. 
+
+  [![Click here to lend your support to: Theme - Autumn and make a donation at pledgie.com!](https://pledgie.com/campaigns/35244.png?skin_name=chrome)](https://pledgie.com/campaigns/35244)
+
