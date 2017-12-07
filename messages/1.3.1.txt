@@ -1,0 +1,44 @@
+-------------------------------------------------------
+Version: 1.3.1
+https://packagecontrol.io/packages/Theme%20-%20Autumn
+-------------------------------------------------------
+
+- COLOUR SCHEMES
+
+  I have consolidated the colour schemes in 4 according to sublime default scopes (http://www.sublimetext.com/docs/3/scope_naming.html#color_schemes).
+
+  The names of this schemes are based on the string colors and they were chosen with the help of this tool: http://chir.ag/projects/name-that-color
+
+  If you are usign Autumn color scheme choose now, Autumn - Peach Orange, or try the other ones.
+
+- "FOLDERS"
+
+  I have added another option. I hope someone likes it.
+
+    //"theme_autumn_rose_folders": true,
+  
+- CUSTOMIZING
+
+  To facilitate changes to the color schemes I have added the .styluscheme files used to generate the color schemes. To do this make use of this helpful package: https://packagecontrol.io/packages/CSScheme 
+
+- OPTIONS
+
+  I have changed the options according to sublime text options (- to _):
+
+	"theme_autumn_flat_buttons": true,
+	"theme_autumn_orange_folders": true,
+	//"theme_autumn_gray_folders": true,
+  //"theme_autumn_rose_folders": true,
+	"theme_autumn_roboto_font": true, //  You need to install Roboto Font and Roboto Font Medium 
+
+  See the screenshot to see them active
+
+- DONATIONS
+
+  If you would like to contribute with a donation, you can do so through the following link:
+
+  https://pledgie.com/campaigns/35244
+
+  This link (badge) is also available on the package web: 
+
+  https://packagecontrol.io/packages/Theme%20-%20Autumn
