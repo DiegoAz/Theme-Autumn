@@ -2,7 +2,7 @@
 
 ## About
 
-  This is a theme and color scheme inspired by autumn colors. It was made with the help of [Flatland](https://github.com/thinkpixellab/flatland). It use the Default theme before Sublime Text build 3143.
+  This is a theme and color schemes inspired by autumn colors. It was made with the help of [Flatland](https://github.com/thinkpixellab/flatland). It use the Default theme before Sublime Text build 3143.
 
 ## Screenshot
 
@@ -33,7 +33,7 @@
     3.2. Unzip the files. Copy the folder into the Sublime packages directory. Change the folder name to `Theme - Autumn`.
 
 
-## Activating the Theme
+## Activating the Theme & options
 
   Include the following in the Sublime user settings file. That file appear through the Sublime Menu option: **Preferences > Settings - User"**
 
@@ -47,6 +47,7 @@
     "theme_autumn_flat_buttons": true,
     "theme_autumn_orange_folders": true,
     // "theme_autumn_gray_folders": true,
+    // "theme_autumn_rose_folders": true,
     "theme_autumn_roboto_font": true, // You need to install Roboto Font and Roboto Font Medium 
   }
   ```
@@ -70,8 +71,7 @@
 
 ## Donations
 
-  If you would like to contribute with a donation, click the badge and give me money
-
+ 
   [![Click here to lend your support to: Theme - Autumn and make a donation at pledgie.com!](https://pledgie.com/campaigns/35244.png?skin_name=chrome)](https://pledgie.com/campaigns/35244)
 
   Thanks for your support. 
