@@ -69,12 +69,13 @@
 
   Because this theme was referencing images in the Theme - Default that no longer exist I have included the classic Sublime Default theme inside this theme. See [this](https://forum.sublimetext.com/t/very-colorful-tabs/31244) post to get more information.
 
-## Donations
+## Do you want to buy me a coffee/beer?
 
- 
-  [![Click here to lend your support to: Theme - Autumn and make a donation at pledgie.com!](https://pledgie.com/campaigns/35244.png?skin_name=chrome)](https://pledgie.com/campaigns/35244)
+  Would you like to buy me a coffee or a beer?
 
-  Thanks for your support. 
+  [Paypal](paypal.me/DiegoAz)  
+
+  Thanks :)
 
 ## License
 
