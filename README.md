@@ -73,7 +73,8 @@
 
   Would you like to buy me a coffee or a beer?
 
-  [Paypal](paypal.me/DiegoAz)  
+  [Paypal](https://www.paypal.me/DiegoAz)
+  
 
   Thanks :)
 
