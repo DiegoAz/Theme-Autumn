@@ -69,12 +69,11 @@
 
   Because this theme was referencing images in the Theme - Default that no longer exist I have included the classic Sublime Default theme inside this theme. See [this](https://forum.sublimetext.com/t/very-colorful-tabs/31244) post to get more information.
 
-## Do you want to buy me a coffee/beer?
+## Do you like the theme?
 
   Would you like to buy me a coffee or a beer?
 
-  [Paypal](https://www.paypal.me/DiegoAz)
-  
+  [Paypal](https://www.paypal.me/DiegoAz)  
 
   Thanks :)
 
