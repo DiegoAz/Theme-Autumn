@@ -1,6 +1,6 @@
 # Theme - Autumn
 
-[![Gitter chat](https://badges.gitter.im/gitterHQ/gitter.png)](https://gitter.im/Theme-Autumn)
+[![Gitter chat](https://badges.gitter.im/gitterHQ/gitter.png)](https://gitter.im/Theme-Autumn/Lobby)
 
 ## About
 
