@@ -7,7 +7,7 @@
 
 ## About
 
-  This is a theme and color schemes inspired by autumn colors. It was made with the help of [Flatland](https://github.com/thinkpixellab/flatland). It use the Default theme before Sublime Text build 3143.
+  This is a theme and color schemes inspired by autumn colors. It was made with the help of [Flatland](https://github.com/thinkpixellab/flatland). It use the Default theme before Sublime Text build 3143, thanks to its creators for allowing me to use it.
 
 ## Screenshot
 
@@ -45,6 +45,7 @@
   ```javascript
   {
     "theme": "Autumn.sublime-theme",
+    // "theme": "Autumn - Tolopea.sublime-theme",
     "color_scheme": "Packages/Theme - Autumn/Autumn - Peach Orange.tmTheme"
 
     //options - See screenshot to see the different options 
@@ -61,10 +62,22 @@
   - Using the Preferences menu option and click: Theme... 
   - Press Ctrl/⌘ + ⇧ + P to open Command Palette, and search for UI:Select Theme
 
+## Color schemes
+
+  You can activate one of sixteen (16) color schemes from 3 different background colors
+
+  Some of them are:
+
+  ![Autumn color scheme](Autumn.PNG)
+  ![Tolopea color scheme](Tolopea.PNG)
+  ![Birch color scheme](Birch.PNG) 
+
+  The name of them came from [Name that Color](http://chir.ag/projects/name-that-color/) or [Color Name & Hue](http://www.color-blindness.com/color-name-hue/). Thanks to its creators  
+
+
 ## Customizing color schemes
 
-  To facilitate changes to the color schemes I have added the .styluscheme files used to generate the color schemes. To do this, make use of [CSScheme](https://packagecontrol.io/packages/CSScheme), a really helpful package.
-
+  To facilitate changes to the color schemes I have added the .styluscheme files used to generate the color schemes. To do this, make use of [PackageResourceViewer](https://packagecontrol.io/packages/PackageResourceViewer) to extract this package and [CSScheme](https://packagecontrol.io/packages/CSScheme) to generate the color schemes(.tmTheme files). Thanks to its creators
 
 ## Support
 
@@ -78,7 +91,7 @@
 
   Would you like to buy me a coffee or a beer?
 
-  [Paypal](https://www.paypal.me/DiegoAz)  
+  [![Donate via Paypal](https://www.paypalobjects.com/webstatic/mktg/logo/pp_cc_mark_37x23.jpg)](https://www.paypal.me/DiegoAz)
 
   Thanks :)
 

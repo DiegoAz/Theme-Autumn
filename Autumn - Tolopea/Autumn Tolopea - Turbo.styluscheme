@@ -1,0 +1,312 @@
+unquote('@name "Autumn Tolopea - Turbo";')
+
+*
+  background             : #332946;
+  caret                  : #e08300;
+  findHighlight          : #f58f00;
+  findHighlightForeground: #332946;
+  foreground             : #ffc499;
+  gutter                 : #332946;
+  gutterForeground       : lighten(#332946, 18%);
+  invisibles             : #7b6f65;
+  lineHighlight          : darken(#332946, 15%);
+  minimapBorder          : #3f3523;
+  selection              : #3f3523;
+
+// COLORS
+
+$col0  = #f58f00 // brackethighlighter plugin - Tangerine
+$col1  = #ff9b0f // functions - West Side
+$col2  = #ffad0a // keyword - Yellow Sea
+$col3  = #fcc922 // string - Turbo
+$col4  = lighten($col3, 20%) // string punctuations - Dandelion
+$col5  = #dedb2a // html tags - Pear
+$col6  = lighten($col5, 20%) // html tags punctuation - Wattle
+$col7  = #eb6cc9 // html/css class, id - Lavender Magenta
+$col8  = #f094d3// constant - Tea Rose
+$col9  = darken($col8, 10%) // css string punctuation - Rose Bud
+$col10 = #ffa05c // general punctuation, xml tags - Atomic Tangerine
+$col11 = #ffac70 // xml punctuation - Hit Pink
+$col12 = #ffc499 // source, variable - Peach Orange
+$col13 = #f2a188 // invalid background - Sweet Pink 
+$col14 = #f2e088 // deprecatxed background - Buff
+$col15 = lighten(#332946, 60%); // java annotations - Schooner
+$col16 = lighten(#332946, 50%); // comments - Sandstone
+$col17 = #242424 // invalid,deprecated foreground - Nero
+
+
+brackethighlighter.default, brackethighlighter.unmatched {
+  foreground: $col0;
+}
+
+entity.name.function {
+  foreground: $col1;
+}
+
+entity.other.attribute-name {
+  foreground: $col1;
+}
+
+variable.function {
+  foreground: $col1;
+}
+
+support.function {
+  foreground: $col1;
+}
+
+ entity.other.pseudo-class, entity.other.pseudo-element, entity.function-name {
+  foreground: $col1;
+}
+
+markup.inserted.git_gutter {
+  foreground: $col1;
+}
+
+variable.language {
+  foreground: $col2;
+}
+
+keyword {
+  foreground: $col2;
+}
+
+keyword.control {
+  foreground: $col2;
+}
+
+keyword.operator.word {
+  foreground: $col2;
+}
+
+entity.name.tag.doctype.html, meta.tag.sgml.doctype.html, meta.tag.sgml.html punctuation.definition.tag.html {
+  foreground: $col2;
+}
+
+meta.tag.sgml.doctype.xml punctuation.definition.tag.begin.xml, meta.tag.sgml.doctype.xml punctuation.definition.tag.end.xml {
+  foreground: $col2;
+}
+
+string, constant.character {
+  foreground: $col3;
+}
+
+meta.tag.sgml.doctype.xml, variable.documentroot.xml {
+  foreground: $col3;
+}
+
+punctuation.definition.string.begin, punctuation.definition.string.end {
+  foreground: $col4;
+}
+
+entity.name.section {
+  foreground: $col5;
+}
+
+entity.name.tag {
+  foreground: $col5;
+}
+
+storage.type.function {
+  foreground: $col5;
+}
+
+storage.modifier {
+  foreground: $col5;
+}
+
+storage.type.function, storage.type.java, meta.method.return-type.java storage.type.primitive.array.java, meta.method.return-type.java {
+  foreground: $col5;
+}
+
+meta.tag.preprocessor.xml punctuation.definition.tag.begin.xml, meta.tag.preprocessor.xml punctuation.definition.tag.end.xml {
+  foreground: $col5;
+}
+
+markup.changed.git_gutter {
+  foreground: $col5;
+}
+
+punctuation.definition.tag.html, punctuation.definition.tag.begin, punctuation.definition.tag.end {
+  foreground: $col6;
+}
+
+entity.other.attribute-name.class, entity.other.attribute-name.id {
+  foreground: $col7;
+}
+
+constant {
+  foreground: $col8;
+}
+
+constant.numeric {
+  foreground: $col8;
+}
+
+constant.language, constant.other {
+  foreground: $col8;
+}
+
+constant.other {
+  foreground: $col8;
+}
+
+support.function.misc.css, support.constant.property-value.css, support.constant.font-name.css, support.constant.color, variable.other.stylus {
+  foreground: $col8;
+}
+
+string.quoted.double.stylus, string.quoted.single.stylus, string.quoted.double.css, string.unquoted.css, string.quoted.single.css {
+  foreground: $col8;
+}
+
+constant.character.escape {
+  foreground: $col8
+}
+
+markup.untracked.git_gutter {
+  foreground: $col8;
+}
+
+keyword.other.unit, constant.other.color.rgb-value punctuation.definition.constant, punctuation.definition.string.begin.css, punctuation.definition.string.end.css {
+  foreground: $col9;
+}
+
+keyword.operator {
+  foreground: $col10;
+}
+
+keyword.control.stylus {
+  foreground: $col10;
+}
+
+punctuation.terminator, punctuation.separator, punctuation.delimiter.comma, punctuation.section.brackets {
+  foreground: $col10;
+}
+
+entity.name.tag.localname {
+  foreground: $col10;
+}
+
+punctuation.definition.string.begin.json, punctuation.definition.string.end.json {
+  foreground: $col10;
+}
+
+variable.language {
+  foreground: $col11;
+}
+
+variable.other.object {
+  foreground: $col11;
+}
+
+storage.type {
+  foreground: $col11;
+}
+
+support {
+  foreground: $col11;
+}
+
+support.class {
+  foreground: $col11;
+}
+
+support.constant {
+  foreground: $col11;
+}
+
+constant.name.attribute.tag.pug {
+  foreground: $col11;
+}
+
+punctuation.definition.tag.begin.xml, punctuation.definition.tag.end.xml {
+  foreground: $col11;
+}
+
+support.function.import {
+  foreground: $col11;
+}
+
+markup.deleted.git_gutter {
+  foreground: $col11;
+}
+
+variable {
+  foreground: $col12;
+}
+
+variable.parameter {
+  foreground: $col12;
+}
+
+source {
+  foreground: $col12;
+}
+
+support.type.vendor-prefix {
+  foreground: $col12;
+}
+
+string.quoted.double.json {
+  foreground: $col12;
+}
+
+entity.name {
+  foreground: $col12;
+}
+
+entity.name.class, entity.other.inherited-class {
+  foreground: $col12;
+}
+
+invalid {
+  background: $col13;
+  foreground: $col17;
+}
+
+invalid.deprecated {
+  background: $col14;
+  foreground: $col17;
+}
+
+variable.annotation, punctuation.definition.annotation, meta.annotation.parameters, meta.annotation.parameters string.quoted.double, meta.annotation.parameters string.quoted.double punctuation.definition.string.begin, meta.annotation.parameters string.quoted.double punctuation.definition.string.end, meta.annotation.parameters variable.function, meta.annotation.parameters meta.assignment.rhs keyword.operator.assignment {
+  foreground: $col15;
+}
+
+comment {
+  foreground: $col16;
+}
+
+comment.block, comment.line,string.comment.buffered.block.pug {
+  foreground: $col16;
+}
+
+markup.ignored.git_gutter {
+  foreground: $col16;
+}
+
+punctuation.definition.heading.begin {
+  foreground: $col7
+}
+
+punctuation.definition.list_item, 
+punctuation.definition.bold.begin,
+punctuation.definition.bold.end,
+punctuation.definition.raw.begin,
+punctuation.definition.raw.end,
+punctuation.definition.heading.setext,
+punctuation.definition.link.begin,
+punctuation.definition.link.end,
+punctuation.definition.constant.begin,
+punctuation.definition.constant.end,
+punctuation.definition.image.begin,
+punctuation.definition.image.end,
+punctuation.definition.italic.begin,
+punctuation.definition.italic.end {
+  foreground: $col10
+}
+
+markup.underline.link.markdown {
+  foreground: $col8
+}
+
