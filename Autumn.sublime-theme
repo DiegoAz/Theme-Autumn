@@ -1372,7 +1372,207 @@
         "class": "icon_highlight",
         "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
         "layer0.texture": "Theme - Autumn/images/icon-highlight-on.png"
-    }
+    },
+
+// FLAT BUTTONS UPDATE
+
+    // BOTTOM PANEL ICONS - GROUP 1
+
+
+    // Regex search button
+    {
+        "class": "icon_regex",
+        "settings":["theme_autumn_flat_buttons"],
+        "layer0.texture": "Theme - Autumn/images/icon-regex-off.png",
+        "layer0.opacity": { "target": 1.0, "speed": 3.0, "interpolation": "smoothstep" },
+        "layer1.texture": "Theme - Autumn/images/static/icon-regex-on.png",
+        "layer1.opacity": { "target": 0.0, "speed": 3.0, "interpolation": "smoothstep" },
+        "content_margin": [8, 8]
+    },
+    {
+        "class": "icon_regex",
+        "settings":["theme_autumn_flat_buttons"],
+        "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
+        "layer0.opacity": { "target": 0.0, "speed": 3.0, "interpolation": "smoothstep" },
+        "layer1.opacity": { "target": 1.0, "speed": 3.0, "interpolation": "smoothstep" }
+        
+    },
+
+    // Case sensitive search button
+   
+    {
+        "class": "icon_case",
+        "settings":["theme_autumn_flat_buttons"],
+        "layer0.texture": "Theme - Autumn/images/icon-case-off.png",
+        "layer0.opacity": { "target": 1.0, "speed": 3.0, "interpolation": "smoothstep" },
+        "layer1.texture": "Theme - Autumn/images/static/icon-case-on.png",
+        "layer1.opacity": { "target": 0.0, "speed": 3.0, "interpolation": "smoothstep" },
+        "content_margin": [8, 8]
+    },
+    {
+        "class": "icon_case",
+        "settings":["theme_autumn_flat_buttons"],
+        "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
+        "layer0.opacity": { "target": 0.0, "speed": 3.0, "interpolation": "smoothstep" },
+        "layer1.opacity": { "target": 1.0, "speed": 3.0, "interpolation": "smoothstep" }
+        
+    },
+    // Match whole word search button
+    
+     {
+        "class": "icon_whole_word",
+        "settings":["theme_autumn_flat_buttons"],
+        "layer0.texture": "Theme - Autumn/images/icon-word-off.png",
+        "layer0.opacity": { "target": 1.0, "speed": 3.0, "interpolation": "smoothstep" },
+        "layer1.texture": "Theme - Autumn/images/static/icon-word-on.png",
+        "layer1.opacity": { "target": 0.0, "speed": 3.0, "interpolation": "smoothstep" },
+        "content_margin": [8, 8]
+    },
+    {
+        "class": "icon_whole_word",
+        "settings":["theme_autumn_flat_buttons"],
+        "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
+        "layer0.opacity": { "target": 0.0, "speed": 3.0, "interpolation": "smoothstep" },
+        "layer1.opacity": { "target": 1.0, "speed": 3.0, "interpolation": "smoothstep" }
+        
+    },
+
+//
+// BOTTOM PANEL ICONS - GROUP 1 (EXTENDED: FIND IN FILES)
+//
+
+    // Show search context button
+    
+     {
+        "class": "icon_context",
+        "settings":["theme_autumn_flat_buttons"],
+        "layer0.texture": "Theme - Autumn/images/icon-context-off.png",
+        "layer0.opacity": { "target": 1.0, "speed": 3.0, "interpolation": "smoothstep" },
+        "layer1.texture": "Theme - Autumn/images/static/icon-context-on.png",
+        "layer1.opacity": { "target": 0.0, "speed": 3.0, "interpolation": "smoothstep" },
+        "content_margin": [8, 8]
+    },
+    {
+        "class": "icon_context",
+        "settings":["theme_autumn_flat_buttons"],
+        "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
+        "layer0.opacity": { "target": 0.0, "speed": 3.0, "interpolation": "smoothstep" },
+        "layer1.opacity": { "target": 1.0, "speed": 3.0, "interpolation": "smoothstep" }
+        
+    },
+
+    // Use search buffer    
+    {
+        "class": "icon_use_buffer",
+        "settings":["theme_autumn_flat_buttons"],
+        "layer0.texture": "Theme - Autumn/images/icon-buffer-off.png",
+        "layer0.opacity": { "target": 1.0, "speed": 3.0, "interpolation": "smoothstep" },
+        "layer1.texture": "Theme - Autumn/images/static/icon-buffer-on.png",
+        "layer1.opacity": { "target": 0.0, "speed": 3.0, "interpolation": "smoothstep" },
+        "content_margin": [8, 8]
+    },
+    {
+        "class": "icon_use_buffer",
+        "settings":["theme_autumn_flat_buttons"],
+        "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
+        "layer0.opacity": { "target": 0.0, "speed": 3.0, "interpolation": "smoothstep" },
+        "layer1.opacity": { "target": 1.0, "speed": 3.0, "interpolation": "smoothstep" }
+        
+    },
+
+//
+// BOTTOM PANEL ICONS - GROUP 2//
+
+
+    // Search wrap button   
+    {
+        "class": "icon_wrap",
+        "settings":["theme_autumn_flat_buttons"],
+        "layer0.texture": "Theme - Autumn/images/icon-wrap-off.png",
+        "layer0.opacity": { "target": 1.0, "speed": 3.0, "interpolation": "smoothstep" },
+        "layer1.texture": "Theme - Autumn/images/static/icon-wrap-on.png",
+        "layer1.opacity": { "target": 0.0, "speed": 3.0, "interpolation": "smoothstep" },
+        "content_margin": [8, 8]
+    },
+    {
+        "class": "icon_wrap",
+        "settings":["theme_autumn_flat_buttons"],
+        "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
+        "layer0.opacity": { "target": 0.0, "speed": 3.0, "interpolation": "smoothstep" },
+        "layer1.opacity": { "target": 1.0, "speed": 3.0, "interpolation": "smoothstep" }
+        
+    },
+    // Search in selection button
+   
+    {
+        "class": "icon_in_selection",
+        "settings":["theme_autumn_flat_buttons"],
+        "layer0.texture": "Theme - Autumn/images/icon-selection-off.png",
+        "layer0.opacity": { "target": 1.0, "speed": 3.0, "interpolation": "smoothstep" },
+        "layer1.texture": "Theme - Autumn/images/static/icon-selection-on.png",
+        "layer1.opacity": { "target": 0.0, "speed": 3.0, "interpolation": "smoothstep" },
+        "content_margin": [8, 8]
+    },
+    {
+        "class": "icon_in_selection",
+        "settings":["theme_autumn_flat_buttons"],
+        "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
+        "layer0.opacity": { "target": 0.0, "speed": 3.0, "interpolation": "smoothstep" },
+        "layer1.opacity": { "target": 1.0, "speed": 3.0, "interpolation": "smoothstep" }
+        
+    },
+
+//
+// BOTTOM PANEL ICONS - GROUP 3
+//
+
+    // Preserve case button
+    
+    {
+        "class": "icon_preserve_case",
+        "settings":["theme_autumn_flat_buttons"],
+        "layer0.texture": "Theme - Autumn/images/icon-preserve-off.png",
+        "layer0.opacity": { "target": 0.0, "speed": 3.0, "interpolation": "smoothstep" },
+        "layer1.texture": "Theme - Autumn/images/static/icon-preserve-on.png",
+        "layer1.opacity": { "target": 1.0, "speed": 3.0, "interpolation": "smoothstep" },
+        "content_margin": [8, 8]
+    },
+    {
+        "class": "icon_preserve_case",
+        "settings":["theme_autumn_flat_buttons"],
+        "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
+        "layer0.opacity": { "target": 1.0, "speed": 3.0, "interpolation": "smoothstep" },
+        "layer1.opacity": { "target": 0.0, "speed": 3.0, "interpolation": "smoothstep" }
+        
+    },
+
+//
+// BOTTOM PANEL ICONS - GROUP 4
+//
+
+
+
+    // Highlight results button
+    
+    {
+        "class": "icon_highlight",
+        "settings":["theme_autumn_flat_buttons"],
+        "layer0.texture": "Theme - Autumn/images/icon-highlight-off.png",
+        "layer0.opacity": { "target": 0.0, "speed": 3.0, "interpolation": "smoothstep" },
+        "layer1.texture": "Theme - Autumn/images/static/icon-highlight-on.png",
+        "layer1.opacity": { "target": 1.0, "speed": 3.0, "interpolation": "smoothstep" },
+        "content_margin": [8, 8]
+    },
+    {
+        "class": "icon_highlight",
+        "settings":["theme_autumn_flat_buttons"],
+        "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
+        "layer0.opacity": { "target": 1.0, "speed": 3.0, "interpolation": "smoothstep" },
+        "layer1.opacity": { "target": 0.0, "speed": 3.0, "interpolation": "smoothstep" }
+        
+    },
+
+
 
 
     
