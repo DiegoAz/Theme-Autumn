@@ -38,7 +38,7 @@
     3.2. Unzip the files. Copy the folder into the Sublime packages directory. Change the folder name to `Theme - Autumn`.
 
 
-## Activating the Theme & options
+## Activating one of the themes & options
 
   Include the following in the Sublime user settings file. That file appear through the Sublime Menu option: **Preferences > Settings - User"**
 
@@ -65,7 +65,7 @@
 
 ## Color schemes
 
-  You can activate one of sixteen (16) color schemes from 3 different background colors
+  You can activate one of twelve (12) color schemes from 3 different background colors
 
   Some of them are:
 
