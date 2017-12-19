@@ -46,6 +46,7 @@
   {
     "theme": "Autumn.sublime-theme",
     // "theme": "Autumn - Tolopea.sublime-theme",
+    // "theme": "Autumn - Birch.sublime-theme",
     "color_scheme": "Packages/Theme - Autumn/Autumn - Peach Orange.tmTheme"
 
     //options - See screenshot to see the different options 
