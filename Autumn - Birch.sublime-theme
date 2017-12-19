@@ -38,7 +38,7 @@
         // Tabset override for dark colors
         "class": "tabset_control",
         "attributes": ["file_dark"],
-        "layer1.opacity": 1.0, 
+        "layer1.opacity": 1.0,
         "layer1.texture": "Theme - Autumn/Theme - Classic/dark_tabset_background_transparent.png"
     },
 
@@ -323,7 +323,7 @@
         "layer3.texture": "Theme - Autumn/images/tab-dirty.png",
         "layer3.opacity": 1
     },
-    
+     
     {
         "class": "tab_close_button",
         "attributes": ["selected"],
@@ -350,7 +350,7 @@
         "layer3.texture": "Theme - Autumn/images/tab-dirty.png",
         "layer3.opacity": 1.0
     },
-    
+   
     {
         "class": "tab_close_button",
         "attributes": ["hover", "selected"],
@@ -406,7 +406,8 @@
         "layer2.opacity": 0.0,
         "layer3.texture": "Theme - Autumn/images/tab-dirty.png",
         "layer3.opacity": 1
-    },    
+    },
+    
     {
         "class": "tab_close_button",
         "attributes": ["hover"],
@@ -632,7 +633,7 @@
     {
         "class": "minimap_control",
         "settings": ["!always_show_minimap_viewport"],
-        "viewport_color": [255,160,92, 25],
+        "viewport_color": [255,160,92, 25 ],
         "viewport_opacity": { "target": 0.0, "speed": 4.0, "interpolation": "smoothstep" },
     },
     {
@@ -735,14 +736,14 @@
         "color": [38, 30, 24],
         "font.face": "Roboto Mono Medium"
     },
-
 //
 // STATUS BAR
 
-    // Status bar container
+   // Status bar container
     {
         "class": "status_bar",
-        "layer0.texture": "Theme - Autumn/images/status-bar-background.png",
+        // "layer0.texture": "Theme - Autumn/images/Tolopea/status-bar-background.png",
+        "layer0.tint": [38, 30, 24],
         "layer0.opacity": 1.0,
         "layer0.inner_margin": [2, 2],
          "content_margin": [14, 4, 4, 4]
@@ -756,49 +757,50 @@
 // FLAT STATUS BAR
 
     // Status bar container
-    {
-        "class": "status_bar",
-        "settings": "[theme_autumn_flat_buttons]",
-        "layer0.texture":"",
-        "layer0.tint": [45,45,45],
-        "layer0.opacity": 1.0,
-        "layer0.inner_margin": [2, 2],
-        "content_margin": [14, 4, 4, 4]
-    },
-    {
-        "class": "status_button",
-        "min_size": [100, 0]
-    },
+    // {
+    //     "class": "status_bar",
+    //     "settings": "[theme_autumn_flat_buttons]",
+    //     "layer0.texture":"",
+    //     "layer0.tint": [45,45,45],
+    //     "layer0.opacity": 1.0,
+    //     "layer0.inner_margin": [2, 2],
+    //     "content_margin": [14, 4, 4, 4]
+    // },
+    // {
+    //     "class": "status_button",
+    //     "min_size": [100, 0]
+    // },
 
 //
 // SIDEBAR
 
 
-    // Sidebar container
+    //Sidebar container
     {
         "class": "sidebar_container",
-        //- "layer0.tint": [49, 52, 55],
+        "layer0.tint": [38, 30, 24],
         "layer0.opacity": 1.0,
         "layer0.draw_center": false,
         "layer0.inner_margin": [0, 0, 0, 0],
         "content_margin": [0, 0, 0, 0]
     },
-    // Sidebar tree
+    //Sidebar tree
     {
         "class": "sidebar_tree",
         "row_padding": [8, 4],
         "indent": 14,
         "indent_offset": 20,
         "indent_top_level": false,
-        "layer0.tint": [36, 36, 36],
+        "layer0.tint": [38, 30, 24],
         "layer0.opacity": 1.0,
         "dark_content": false
     },
    
-    // Sidebar rows
+   // Sidebar rows
     {
         "class": "tree_row",
-        "layer0.texture": "Theme - Autumn/images/sidebar-row-selected.png",
+        // "layer0.texture": "Theme - Autumn/images/Tolopea/sidebar-row-selected.png",
+        "layer0.tint": [51, 41, 32],
         "layer0.opacity": 0.0,
         "layer0.inner_margin": [1,1]
     },
@@ -836,7 +838,7 @@
         
         "font.size": 12
     },
-     // Sidebar entry with Roboto Mono 
+     // Sidebar entry with Roboto Mono
     {
         "class": "sidebar_label",
         "settings": ["theme_autumn_roboto_font"],
@@ -903,20 +905,21 @@
         "class": "close_button",
         "attributes": ["dirty"],
         "layer0.texture": "Theme - Autumn/images/file-dirty.png",
-        "layer0.opacity": 1.0
+        "layer0.opacity": 1.0  
     },
     {
         "class": "close_button",
         "attributes": ["dirty"],
         "parents": [{"class": "tree_row", "attributes": ["selected"]}],
         "layer0.texture": "Theme - Autumn/images/file-dirty-selected.png",
-        "layer1.opacity": 0.0  
-
+        "layer1.opacity": 0.0
     },
-    
+   
 
 
-    // Sidebar file close hover
+
+
+    //Sidebar file close hover
     {
         "class": "close_button",
         "attributes": ["hover"],
@@ -933,7 +936,12 @@
         "layer0.inner_margin": 0,
         
  
-    },   
+    },
+
+        // {
+    //     "class": "disclosure_button_control",        
+    //     "settings":["autumn-color_green"],
+    // },
     
     
     // Sidebar group open
@@ -988,45 +996,24 @@
 // STANDARD TEXT BUTTONS
 
 
-    // Standard buttons (used for Find / Replace panel)
+   // Standard buttons (used for Find / Replace panel)
     {
         "class": "button_control",
         "content_margin": [10, 10],
         "min_size": [89, 0],
         // Default button state
-        "layer0.texture": "Theme - Autumn/images/btn-large.png",
+        "layer0.tint": [63, 50, 39],
         "layer0.opacity": 1.0,
         "layer0.inner_margin": [10, 10],
         // Pressed button setup
-        "layer1.texture": "Theme - Autumn/images/btn-large-hover.png",
+        "layer1.tint": [75, 60, 47],
         "layer1.opacity": { "target": 0.0, "speed": 2.5, "interpolation": "smoothstep" },
         "layer1.inner_margin": [10, 10],
 
-        "layer2.texture": "Theme - Autumn/images/btn-large-pressed.png",
+        "layer2.tint": [63, 50, 39],
         "layer2.opacity": { "target": 0.0, "speed": 2.5, "interpolation": "smoothstep" },
         "layer2.inner_margin": [10, 10]
 
-    },
-    // FLAT Standard buttons (used for Find / Replace panel)
-    {
-        "class": "button_control",
-        "settings":["theme_autumn_flat_buttons"],
-        "content_margin": [10, 10],
-        "min_size": [89, 0],
-        // Default button state
-        "layer0.texture": "",
-        "layer0.tint": [65, 65, 65],
-        "layer0.opacity": 1.0,
-        "layer0.inner_margin": [10, 10],
-        // Pressed button setup
-        "layer1.texture": "",
-        "layer1.tint": [56, 56, 56],
-        "layer1.opacity": { "target": 0.0, "speed": 2.5, "interpolation": "smoothstep" },
-        "layer1.inner_margin": [10, 10],
-        "layer2.texture": "",
-        "layer2.tint": [65, 65, 65],
-        "layer2.opacity": { "target": 0.0, "speed": 2.5, "interpolation": "smoothstep" },
-        "layer2.inner_margin": [10, 10]
     },
 
     {
@@ -1046,37 +1033,81 @@
    
     
 //
+    // FLAT Standard buttons (used for Find / Replace panel)
+    // {
+    //     "class": "button_control",
+    //     "settings":["theme_autumn_flat_buttons"],
+    //     "content_margin": [10, 10],
+    //     "min_size": [89, 0],
+    //     // Default button state
+    //     "layer0.texture": "",
+    //     "layer0.tint": [65, 65, 65],
+    //     "layer0.opacity": 1.0,
+    //     "layer0.inner_margin": [10, 10],
+    //     // Pressed button setup
+    //     "layer1.texture": "",
+    //     "layer1.tint": [56, 56, 56],
+    //     "layer1.opacity": { "target": 0.0, "speed": 2.5, "interpolation": "smoothstep" },
+    //     "layer1.inner_margin": [10, 10],
+    //     "layer2.texture": "",
+    //     "layer2.tint": [65, 65, 65],
+    //     "layer2.opacity": { "target": 0.0, "speed": 2.5, "interpolation": "smoothstep" },
+    //     "layer2.inner_margin": [10, 10]
+    // },
+
+    // {
+    //     "class": "button_control",
+    //     "attributes": ["hover"],
+    //     "layer0.opacity": 0,
+    //     "layer1.opacity": 1.0,
+    //     "layer2.opacity": 0
+    // },
+    // {
+    //     "class": "button_control",
+    //     "attributes": ["pressed"],
+    //     "layer0.opacity": 0,
+    //     "layer1.opacity": 0,
+    //     "layer2.opacity": 1.0
+    // },
+   
+    
+//
 
 // PANEL BACKGROUNDS
 
 
-    // Bottom panel background
+     // Bottom panel background
     {
         "class": "panel_control",
-        "layer0.texture": "Theme - Autumn/images/panel-background.png",
+        // "layer0.texture": "Theme - Autumn/images/Tolopea/panel-background.png",
+        "layer0.tint": [38, 30, 24],
         "layer0.inner_margin": [2, 2, 2, 5],
         "layer0.opacity": 1.0
     },
 
-    // FLAT Bottom panel background
-    {
-        "class": "panel_control",
-        "settings":["theme_autumn_flat_buttons"],
-        "layer0.texture":"",
-        "layer0.tint": [45,45,45],
-        "layer0.inner_margin": [2, 2, 2, 5],
-        "layer0.opacity": 1.0
-    },
+    // // FLAT Bottom panel background
+    // {
+    //     "class": "panel_control",
+    //     "settings":["theme_autumn_flat_buttons"],
+    //     "layer0.texture":"",
+    //     "layer0.tint": [45,45,45],
+    //     "layer0.inner_margin": [2, 2, 2, 5],
+    //     "layer0.opacity": 1.0
+    // },
+
+
     // Quick panel background
     {
         "class": "overlay_control",
-        "layer0.texture": "Theme - Autumn/images/overlay-bg.png",
-        "layer0.inner_margin": [30, 30, 30, 30], 
+        "layer0.tint":  [63, 50, 39],
+        // "layer0.inner_margin": [0, 30, 30, 30],
         "layer0.opacity": 1.0,
-        "layer1.texture": "Theme - Autumn/images/quick-panel-background.png",
-        "layer1.inner_margin": [20, 40, 20, 20],
-        "layer1.opacity": 1.0,
-        "content_margin": [20, 0, 20, 28] // content margin
+        // "layer1.tint":  [49, 34, 79],
+        // "layer1.texture": "Theme - Autumn/images/Tolopea/quick-panel-background.png",
+        // "layer1.inner_margin": [20, 0, 0, 0],
+        // "layer1.opacity": 1.0,
+        "content_margin": [10, 10, 10, 10]
+        
     },
     
 
@@ -1085,7 +1116,7 @@
 
     {
         "class": "quick_panel",
-        "row_padding": [5, 3],
+        "row_padding": [20, 10],
         "layer0.tint": [36,36,36],
         "layer0.opacity": 1.0
     },
@@ -1093,34 +1124,38 @@
    
     {
         "class": "quick_panel_row",
-        "layer0.texture": "Theme - Autumn/images/quick-panel-row.png",
+        // "layer0.texture": "Theme - Autumn/images/quick-panel-row.png",
+        "layer0.tint": [51, 41, 32],
         "layer0.inner_margin": [2, 2, 2, 2],
         "layer0.opacity": 1.0
     },
     {
         "class": "quick_panel_row",
         "attributes": ["selected"],
-        "layer0.texture": "Theme - Autumn/images/quick-panel-row-selected.png"
+        "layer0.tint": [204, 119, 0],
+        // "layer0.texture": "Theme - Autumn/images/quick-panel-row-selected.png"
     },
     {
         "class": "quick_panel_label",
-        "fg": [143,130,118, 255],
+        "fg": [176,151,130, 255],
         "match_fg": [238, 138, 0, 255],
         "selected_fg": [31, 31, 31, 255], //selected foreground
         "selected_match_fg": [31, 31, 31, 255]
     },
     {
         "class": "quick_panel_path_label",
-        "fg": [143,130,118, 255],
+        "fg": [169,141,117, 255],
         "match_fg": [238, 138, 0, 255],
         "selected_fg": [31, 31, 31, 255], //selected foreground
-        "selected_match_fg": [31, 31, 31, 255]
+        "selected_match_fg": [31, 31, 31, 255],
+        "font.face": "Roboto Mono"
     },
     {
         "class": "quick_panel_score_label",
-        "fg": [143,130,118, 255],
+        "fg": [169,141,117, 255],
         "selected_fg": [31, 31, 31, 255]
     },
+
 
 //
 // MINI QUICK PANEL naranja 238, 138, 0 grisesito 37, 40, 43
@@ -1128,14 +1163,18 @@
 
     {
         "class": "mini_quick_panel_row",
-        "layer0.texture": "Theme - Autumn/images/quick-panel-row.png",
+        // "layer0.texture": "Theme - Autumn/images/quick-panel-row.png",
+        "layer0.tint": [51, 41, 32],
         "layer0.inner_margin": [2, 2, 2, 2],
         "layer0.opacity": 1.0
     },
     {
         "class": "mini_quick_panel_row",
         "attributes": ["selected"],
-        "layer0.texture": "Theme - Autumn/images/quick-panel-row-selected.png"
+        "layer0.tint": [204, 119, 0],
+        "layer0.opacity": 1.0,
+
+        // "layer0.texture": "Theme - Autumn/images/quick-panel-row-selected.png"
     },
 
 //
@@ -1182,50 +1221,50 @@
 
     {
         "class": "icon_button_control",
-        "layer0.texture": "Theme - Autumn/images/icon-button.png",
-        // "layer0.tint": [47,38,64],
-        "layer0.opacity":1.0,     
+        // "layer0.texture": "Theme - Autumn/images/icon-button.png",
+        "layer0.tint": [51,41,32],
+        "layer0.opacity":0.0,     
         "content_margin": [8, 8]
     },      
     {
         "class": "icon_button_control",
-        "layer2.texture": "Theme - Autumn/images/icon-button-on.png",
-        // "layer2.tint": [47,38,64],
-        "layer2.opacity": { "target": 0.0, "speed": 3, "interpolation": "smoothstep" }       
+        // "layer2.texture": "Theme - Autumn/images/icon-button-on.png",
+        "layer2.tint": [51,41,32],
+        // "layer2.opacity": { "target": 0.0, "speed": 3, "interpolation": "smoothstep" }       
     },
 
     {
         "class": "icon_button_control",
         "attributes": ["selected"],
-        "layer2.opacity": 1.0
+        "layer2.opacity": 0.0
     },
 
 
 // FLAT BOTTOM PANEL BUTTONS
 
     
-    {
-        "class": "icon_button_control",
-        "settings":["theme_autumn_flat_buttons"],
-        "layer0.texture":"",
-        "layer0.tint": [45,45,45],
-        "layer0.opacity":1.0,     
-        "content_margin": [8, 8]
+    // {
+    //     "class": "icon_button_control",
+    //     "settings":["theme_autumn_flat_buttons"],
+    //     "layer0.texture":"",
+    //     "layer0.tint": [45,45,45],
+    //     "layer0.opacity":1.0,     
+    //     "content_margin": [8, 8]
 
-    },      
-    {
-        "class": "icon_button_control",
-       "settings":["theme_autumn_flat_buttons"],
-        "layer2.texture":"",
-        "layer2.tint": [45,45,45],
-        "layer2.opacity": { "target": 0.0, "speed": 3, "interpolation": "smoothstep" }       
-    },
-     {
-        "class": "icon_button_control",
-        "settings":["theme_autumn_flat_buttons"],
-        "attributes": ["selected"],
-        "layer2.opacity": 1.0
-    },
+    // },      
+    // {
+    //     "class": "icon_button_control",
+    //    "settings":["theme_autumn_flat_buttons"],
+    //     "layer2.texture":"",
+    //     "layer2.tint": [45,45,45],
+    //     "layer2.opacity": { "target": 0.0, "speed": 3, "interpolation": "smoothstep" }       
+    // },
+    //  {
+    //     "class": "icon_button_control",
+    //     "settings":["theme_autumn_flat_buttons"],
+    //     "attributes": ["selected"],
+    //     "layer2.opacity": 1.0
+    // },
 
    
     
@@ -1236,38 +1275,52 @@
     {
         "class": "icon_regex",
         "layer0.texture": "Theme - Autumn/images/icon-regex-off.png",
-        "layer0.opacity": 1.0,
+        "layer0.opacity": { "target": 1.0, "speed": 3.0, "interpolation": "smoothstep" },
+        "layer1.texture": "Theme - Autumn/images/static/icon-regex-on.png",
+        "layer1.opacity": { "target": 0.0, "speed": 3.0, "interpolation": "smoothstep" },
         "content_margin": [8, 8]
     },
     {
         "class": "icon_regex",
         "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
-        "layer0.texture": "Theme - Autumn/images/icon-regex-on.png",
+        "layer0.opacity": { "target": 0.0, "speed": 3.0, "interpolation": "smoothstep" },
+        "layer1.opacity": { "target": 1.0, "speed": 3.0, "interpolation": "smoothstep" }
+        
     },
+
     // Case sensitive search button
+   
     {
         "class": "icon_case",
         "layer0.texture": "Theme - Autumn/images/icon-case-off.png",
-        "layer0.opacity": 1.0,
+        "layer0.opacity": { "target": 1.0, "speed": 3.0, "interpolation": "smoothstep" },
+        "layer1.texture": "Theme - Autumn/images/static/icon-case-on.png",
+        "layer1.opacity": { "target": 0.0, "speed": 3.0, "interpolation": "smoothstep" },
         "content_margin": [8, 8]
     },
     {
         "class": "icon_case",
         "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
-        "layer0.texture": "Theme - Autumn/images/icon-case-on.png",
+        "layer0.opacity": { "target": 0.0, "speed": 3.0, "interpolation": "smoothstep" },
+        "layer1.opacity": { "target": 1.0, "speed": 3.0, "interpolation": "smoothstep" }
         
     },
     // Match whole word search button
-    {
+    
+     {
         "class": "icon_whole_word",
         "layer0.texture": "Theme - Autumn/images/icon-word-off.png",
-        "layer0.opacity": 1.0,
+        "layer0.opacity": { "target": 1.0, "speed": 3.0, "interpolation": "smoothstep" },
+        "layer1.texture": "Theme - Autumn/images/static/icon-word-on.png",
+        "layer1.opacity": { "target": 0.0, "speed": 3.0, "interpolation": "smoothstep" },
         "content_margin": [8, 8]
     },
     {
         "class": "icon_whole_word",
         "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
-        "layer0.texture": "Theme - Autumn/images/icon-word-on.png"
+        "layer0.opacity": { "target": 0.0, "speed": 3.0, "interpolation": "smoothstep" },
+        "layer1.opacity": { "target": 1.0, "speed": 3.0, "interpolation": "smoothstep" }
+        
     },
 
 //
@@ -1275,69 +1328,76 @@
 //
 
     // Show search context button
-    {
+    
+     {
         "class": "icon_context",
         "layer0.texture": "Theme - Autumn/images/icon-context-off.png",
-        "layer0.opacity": 1.0,
+        "layer0.opacity": { "target": 1.0, "speed": 3.0, "interpolation": "smoothstep" },
+        "layer1.texture": "Theme - Autumn/images/static/icon-context-on.png",
+        "layer1.opacity": { "target": 0.0, "speed": 3.0, "interpolation": "smoothstep" },
         "content_margin": [8, 8]
     },
     {
         "class": "icon_context",
         "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
-        "layer0.texture": "Theme - Autumn/images/icon-context-on.png"
+        "layer0.opacity": { "target": 0.0, "speed": 3.0, "interpolation": "smoothstep" },
+        "layer1.opacity": { "target": 1.0, "speed": 3.0, "interpolation": "smoothstep" }
+        
     },
-    // Use search buffer
+
+    // Use search buffer    
     {
         "class": "icon_use_buffer",
         "layer0.texture": "Theme - Autumn/images/icon-buffer-off.png",
-        "layer0.opacity": 1.0,
+        "layer0.opacity": { "target": 1.0, "speed": 3.0, "interpolation": "smoothstep" },
+        "layer1.texture": "Theme - Autumn/images/static/icon-buffer-on.png",
+        "layer1.opacity": { "target": 0.0, "speed": 3.0, "interpolation": "smoothstep" },
         "content_margin": [8, 8]
     },
     {
         "class": "icon_use_buffer",
         "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
-        "layer0.texture": "Theme - Autumn/images/icon-buffer-on.png"
+        "layer0.opacity": { "target": 0.0, "speed": 3.0, "interpolation": "smoothstep" },
+        "layer1.opacity": { "target": 1.0, "speed": 3.0, "interpolation": "smoothstep" }
+        
     },
 
 //
-// BOTTOM PANEL ICONS - GROUP 2
-//
+// BOTTOM PANEL ICONS - GROUP 2//
 
-    // Reverse search direction button
-    {
-        "class": "icon_reverse",
-        "layer0.texture": "Theme - Autumn/images/icon-reverse-off.png",
-        "layer0.opacity": 1.0,
-        "content_margin": [8, 8]
-    },
-    {
-        "class": "icon_reverse",
-        "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
-        "layer0.texture": "Theme - Autumn/images/icon-reverse-on.png"
-    },
-    // Search wrap button
+
+    // Search wrap button   
     {
         "class": "icon_wrap",
         "layer0.texture": "Theme - Autumn/images/icon-wrap-off.png",
-        "layer0.opacity": 1.0,
+        "layer0.opacity": { "target": 1.0, "speed": 3.0, "interpolation": "smoothstep" },
+        "layer1.texture": "Theme - Autumn/images/static/icon-wrap-on.png",
+        "layer1.opacity": { "target": 0.0, "speed": 3.0, "interpolation": "smoothstep" },
         "content_margin": [8, 8]
     },
     {
         "class": "icon_wrap",
         "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
-        "layer0.texture": "Theme - Autumn/images/icon-wrap-on.png"
+        "layer0.opacity": { "target": 0.0, "speed": 3.0, "interpolation": "smoothstep" },
+        "layer1.opacity": { "target": 1.0, "speed": 3.0, "interpolation": "smoothstep" }
+        
     },
     // Search in selection button
+   
     {
         "class": "icon_in_selection",
         "layer0.texture": "Theme - Autumn/images/icon-selection-off.png",
-        "layer0.opacity": 1.0,
+        "layer0.opacity": { "target": 1.0, "speed": 3.0, "interpolation": "smoothstep" },
+        "layer1.texture": "Theme - Autumn/images/static/icon-selection-on.png",
+        "layer1.opacity": { "target": 0.0, "speed": 3.0, "interpolation": "smoothstep" },
         "content_margin": [8, 8]
     },
     {
         "class": "icon_in_selection",
         "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
-        "layer0.texture": "Theme - Autumn/images/icon-selection-on.png"
+        "layer0.opacity": { "target": 0.0, "speed": 3.0, "interpolation": "smoothstep" },
+        "layer1.opacity": { "target": 1.0, "speed": 3.0, "interpolation": "smoothstep" }
+        
     },
 
 //
@@ -1345,34 +1405,46 @@
 //
 
     // Preserve case button
+    
     {
         "class": "icon_preserve_case",
         "layer0.texture": "Theme - Autumn/images/icon-preserve-off.png",
-        "layer0.opacity": 1.0,
+        "layer0.opacity": { "target": 0.0, "speed": 3.0, "interpolation": "smoothstep" },
+        "layer1.texture": "Theme - Autumn/images/static/icon-preserve-on.png",
+        "layer1.opacity": { "target": 1.0, "speed": 3.0, "interpolation": "smoothstep" },
         "content_margin": [8, 8]
     },
     {
         "class": "icon_preserve_case",
         "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
-        "layer0.texture": "Theme - Autumn/images/icon-preserve-on.png"
+        "layer0.opacity": { "target": 1.0, "speed": 3.0, "interpolation": "smoothstep" },
+        "layer1.opacity": { "target": 0.0, "speed": 3.0, "interpolation": "smoothstep" }
+        
     },
 
 //
 // BOTTOM PANEL ICONS - GROUP 4
 //
 
+
+
     // Highlight results button
+    
     {
         "class": "icon_highlight",
         "layer0.texture": "Theme - Autumn/images/icon-highlight-off.png",
-        "layer0.opacity": 1.0,
+        "layer0.opacity": { "target": 0.0, "speed": 3.0, "interpolation": "smoothstep" },
+        "layer1.texture": "Theme - Autumn/images/static/icon-highlight-on.png",
+        "layer1.opacity": { "target": 1.0, "speed": 3.0, "interpolation": "smoothstep" },
         "content_margin": [8, 8]
     },
     {
         "class": "icon_highlight",
         "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
-        "layer0.texture": "Theme - Autumn/images/icon-highlight-on.png"
-    }
+        "layer0.opacity": { "target": 1.0, "speed": 3.0, "interpolation": "smoothstep" },
+        "layer1.opacity": { "target": 0.0, "speed": 3.0, "interpolation": "smoothstep" }
+        
+    },
 
 
     

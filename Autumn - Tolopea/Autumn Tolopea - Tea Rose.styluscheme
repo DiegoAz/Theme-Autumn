@@ -10,7 +10,7 @@ unquote('@name "Autumn Tolopea - Tea Rose";')
   gutterForeground       : lighten(#332946, 18%);
   invisibles             : #7b6f65;
   lineHighlight          : darken(#332946, 15%);
-  minimapBorder          : #3f3523;
+  minimapBorder          : #554474;
   selection              : #3f3523;
 
 // COLORS

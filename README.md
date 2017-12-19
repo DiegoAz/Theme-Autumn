@@ -79,6 +79,11 @@
 
   To facilitate changes to the color schemes I have added the .styluscheme files used to generate the color schemes. To do this, make use of [PackageResourceViewer](https://packagecontrol.io/packages/PackageResourceViewer) to extract this package and [CSScheme](https://packagecontrol.io/packages/CSScheme) to generate the color schemes(.tmTheme files). Thanks to its creators
 
+## File Icons
+
+  If you want to add icons to the different files install [A File Icon](https://packagecontrol.io/packages/A%20File%20Icon)
+
+
 ## Support
 
   - [Git Gutter](https://packagecontrol.io/packages/GitGutter)
@@ -87,7 +92,7 @@
 
   Because this theme was referencing images in the Theme - Default that no longer exist I have included the classic Sublime Default theme inside this theme. See [this](https://forum.sublimetext.com/t/very-colorful-tabs/31244) post to get more information.
 
-## Do you like the theme?
+## Do you like the themes and color schemes?
 
   Would you like to buy me a coffee or a beer?
 
