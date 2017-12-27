@@ -778,7 +778,7 @@
     // Sidebar container
     {
         "class": "sidebar_container",
-        //- "layer0.tint": [49, 52, 55],
+        "layer0.tint": [38, 31, 52],
         "layer0.opacity": 1.0,
         "layer0.draw_center": false,
         "layer0.inner_margin": [0, 0, 0, 0],
@@ -870,7 +870,7 @@
     {
         "class": "sidebar_label",
         "parents": [{"class": "tree_row", "attributes": ["selected"]}],
-        "color": [255, 255, 255],
+        "color": [189, 178, 210],
         "shadow_color": [0, 0, 0],
         "shadow_offset": [0, 0]
     },
@@ -1137,8 +1137,7 @@
         "fg": [123,101,164, 255],
         "match_fg": [238, 138, 0, 255],
         "selected_fg": [31, 31, 31, 255], //selected foreground
-        "selected_match_fg": [31, 31, 31, 255],
-        "font.face": "Roboto Mono"
+        "selected_match_fg": [31, 31, 31, 255]        
     },
     {
         "class": "quick_panel_score_label",
@@ -1177,13 +1176,13 @@
     {
         "class": "auto_complete",
         "row_padding": [2, 2],
-        "layer0.tint": [25, 25, 25],
+        "layer0.tint": [38, 30, 51],
         "layer0.opacity": 1.0,
         "dark_content": false
     },
     {
         "class": "auto_complete_label",
-        "fg": [143,130,118, 255],
+        "fg": [147,129,181, 255],
         "match_fg": [238, 138, 0, 255],
         "bg": [28, 28, 28],
         "selected_fg": [31, 31, 31, 255], //selected foreground

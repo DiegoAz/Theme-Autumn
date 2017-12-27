@@ -1215,7 +1215,7 @@
     },      
     {
         "class": "icon_button_control",
-       "settings":["theme_autumn_flat_buttons"],
+        "settings":["theme_autumn_flat_buttons"],
         "layer2.texture":"",
         "layer2.tint": [45,45,45],
         "layer2.opacity": { "target": 0.0, "speed": 3, "interpolation": "smoothstep" }       
@@ -1235,24 +1235,28 @@
     // Regex search button
     {
         "class": "icon_regex",
+        "settings":["!theme_autumn_flat_buttons"],
         "layer0.texture": "Theme - Autumn/images/icon-regex-off.png",
         "layer0.opacity": 1.0,
         "content_margin": [8, 8]
     },
     {
         "class": "icon_regex",
+        "settings":["!theme_autumn_flat_buttons"],
         "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
         "layer0.texture": "Theme - Autumn/images/icon-regex-on.png",
     },
     // Case sensitive search button
     {
         "class": "icon_case",
+        "settings":["!theme_autumn_flat_buttons"],
         "layer0.texture": "Theme - Autumn/images/icon-case-off.png",
         "layer0.opacity": 1.0,
         "content_margin": [8, 8]
     },
     {
         "class": "icon_case",
+        "settings":["!theme_autumn_flat_buttons"],
         "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
         "layer0.texture": "Theme - Autumn/images/icon-case-on.png",
         
@@ -1260,12 +1264,14 @@
     // Match whole word search button
     {
         "class": "icon_whole_word",
+        "settings":["!theme_autumn_flat_buttons"],
         "layer0.texture": "Theme - Autumn/images/icon-word-off.png",
         "layer0.opacity": 1.0,
         "content_margin": [8, 8]
     },
     {
         "class": "icon_whole_word",
+        "settings":["!theme_autumn_flat_buttons"],
         "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
         "layer0.texture": "Theme - Autumn/images/icon-word-on.png"
     },
@@ -1277,24 +1283,28 @@
     // Show search context button
     {
         "class": "icon_context",
+        "settings":["!theme_autumn_flat_buttons"],
         "layer0.texture": "Theme - Autumn/images/icon-context-off.png",
         "layer0.opacity": 1.0,
         "content_margin": [8, 8]
     },
     {
         "class": "icon_context",
+        "settings":["!theme_autumn_flat_buttons"],
         "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
         "layer0.texture": "Theme - Autumn/images/icon-context-on.png"
     },
     // Use search buffer
     {
         "class": "icon_use_buffer",
+        "settings":["!theme_autumn_flat_buttons"],
         "layer0.texture": "Theme - Autumn/images/icon-buffer-off.png",
         "layer0.opacity": 1.0,
         "content_margin": [8, 8]
     },
     {
         "class": "icon_use_buffer",
+        "settings":["!theme_autumn_flat_buttons"],
         "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
         "layer0.texture": "Theme - Autumn/images/icon-buffer-on.png"
     },
@@ -1306,36 +1316,42 @@
     // Reverse search direction button
     {
         "class": "icon_reverse",
+        "settings":["!theme_autumn_flat_buttons"],
         "layer0.texture": "Theme - Autumn/images/icon-reverse-off.png",
         "layer0.opacity": 1.0,
         "content_margin": [8, 8]
     },
     {
         "class": "icon_reverse",
+        "settings":["!theme_autumn_flat_buttons"],
         "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
         "layer0.texture": "Theme - Autumn/images/icon-reverse-on.png"
     },
     // Search wrap button
     {
         "class": "icon_wrap",
+        "settings":["!theme_autumn_flat_buttons"],
         "layer0.texture": "Theme - Autumn/images/icon-wrap-off.png",
         "layer0.opacity": 1.0,
         "content_margin": [8, 8]
     },
     {
         "class": "icon_wrap",
+        "settings":["!theme_autumn_flat_buttons"],
         "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
         "layer0.texture": "Theme - Autumn/images/icon-wrap-on.png"
     },
     // Search in selection button
     {
         "class": "icon_in_selection",
+        "settings":["!theme_autumn_flat_buttons"],
         "layer0.texture": "Theme - Autumn/images/icon-selection-off.png",
         "layer0.opacity": 1.0,
         "content_margin": [8, 8]
     },
     {
         "class": "icon_in_selection",
+        "settings":["!theme_autumn_flat_buttons"],
         "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
         "layer0.texture": "Theme - Autumn/images/icon-selection-on.png"
     },
@@ -1347,12 +1363,14 @@
     // Preserve case button
     {
         "class": "icon_preserve_case",
+        "settings":["!theme_autumn_flat_buttons"],
         "layer0.texture": "Theme - Autumn/images/icon-preserve-off.png",
         "layer0.opacity": 1.0,
         "content_margin": [8, 8]
     },
     {
         "class": "icon_preserve_case",
+        "settings":["!theme_autumn_flat_buttons"],
         "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
         "layer0.texture": "Theme - Autumn/images/icon-preserve-on.png"
     },
@@ -1364,12 +1382,14 @@
     // Highlight results button
     {
         "class": "icon_highlight",
+        "settings":["!theme_autumn_flat_buttons"],
         "layer0.texture": "Theme - Autumn/images/icon-highlight-off.png",
         "layer0.opacity": 1.0,
         "content_margin": [8, 8]
     },
     {
         "class": "icon_highlight",
+        "settings":["!theme_autumn_flat_buttons"],
         "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
         "layer0.texture": "Theme - Autumn/images/icon-highlight-on.png"
     },
