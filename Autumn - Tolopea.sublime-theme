@@ -228,7 +228,7 @@
     {
         "class": "tab_label",
         "parents": [{"class": "tab_control", "attributes": ["selected", "file_medium"]}],
-        "fg": [255, 255, 255, 255],
+        "fg": [181, 176, 191, 230],
         "shadow_color": [0, 0, 0, 100],
         "shadow_offset": [0, -1]
     },
@@ -239,10 +239,12 @@
         "shadow_color": [0, 0, 0, 100],
         "shadow_offset": [0, -1]
     },
+
+    
     {
         "class": "tab_label",
         "parents": [{"class": "tab_control", "attributes": ["selected", "file_medium_dark"]}],
-        "fg": [255, 255, 255, 230],
+        "fg": [181, 176, 191, 230],
         "shadow_color": [0, 0, 0, 255],
         "shadow_offset": [0, -1]
     },
@@ -256,7 +258,7 @@
     {
         "class": "tab_label",
         "parents": [{"class": "tab_control", "attributes": ["selected", "file_dark"]}],
-        "fg": [255, 255, 255, 230],
+        "fg": [181, 176, 191, 230],
         "shadow_color": [0, 0, 0, 255],
         "shadow_offset": [0, -1]
     },
@@ -743,7 +745,7 @@
     {
         "class": "status_bar",
         // "layer0.texture": "Theme - Autumn/images/Tolopea/status-bar-background.png",
-        "layer0.tint": [47, 38, 64],
+        "layer0.tint": [46,38,64],
         "layer0.opacity": 1.0,
         "layer0.inner_margin": [2, 2],
          "content_margin": [14, 4, 4, 4]
@@ -778,7 +780,7 @@
     // Sidebar container
     {
         "class": "sidebar_container",
-        "layer0.tint": [38, 31, 52],
+        "layer0.tint": [33,28,46],
         "layer0.opacity": 1.0,
         "layer0.draw_center": false,
         "layer0.inner_margin": [0, 0, 0, 0],
@@ -791,7 +793,7 @@
         "indent": 14,
         "indent_offset": 20,
         "indent_top_level": false,
-        "layer0.tint": [38, 31, 52],
+        "layer0.tint": [33,28,46],
         "layer0.opacity": 1.0,
         "dark_content": false
     },
@@ -800,10 +802,11 @@
     {
         "class": "tree_row",
         // "layer0.texture": "Theme - Autumn/images/Tolopea/sidebar-row-selected.png",
-        "layer0.tint": [51,41,70], 
+        "layer0.tint": [26,22,37], 
         "layer0.opacity": 0.0,
         "layer0.inner_margin": [1,1]
     },
+    
     // Sidebar row selected
     {
         "class": "tree_row",
@@ -822,43 +825,44 @@
     // Sidebar heading with Roboto Mono
     {
         "class": "sidebar_heading",
-        "settings": ["theme_autumn_roboto_font"],
-        "color": [148, 149, 151],
-        "font.bold": true,
-        "shadow_color": [148, 149, 151],
-        "shadow_offset": [0, 0],        
+        "settings": ["theme_autumn_roboto_font"],          
         "font.face": "Roboto Mono",
-        "font.size": 11
+        
     },
     // Sidebar entry
     {
         "class": "sidebar_label",
-        "color": [212, 212, 213],
-        "shadow_offset": [0, 0],
-        
+        "color": [181, 176, 191],
+        "shadow_offset": [0, 0],        
         "font.size": 12
     },
      // Sidebar entry with Roboto Mono
     {
         "class": "sidebar_label",
-        "settings": ["theme_autumn_roboto_font"],
-        "color": [212, 212, 213],
-        "shadow_offset": [0, 0],
+        "settings": ["theme_autumn_roboto_font"],       
         "font.face": "Roboto Mono",
-        "font.size": 12
+        
+    },
+    // Sidebar folder entry
+    {
+        "class": "sidebar_label",
+        "parents": [{"class": "tree_row", "attributes": ["hover"]}],
+        "color": [210, 204, 222],
+        "shadow_color": [0, 0, 0],
+        "shadow_offset": [0, 0]
     },
     // Sidebar folder entry
     {
         "class": "sidebar_label",
         "parents": [{"class": "tree_row", "attributes": ["expandable"]}],
-        "color": [212, 212, 213],
+        "color": [181, 176, 191],
         "shadow_color": [0, 0, 0],
         "shadow_offset": [0, 0]
     },
     {
         "class": "sidebar_label",
-        "parents": [{"class": "tree_row", "attributes": ["expandable", "hover"]}],
-        "color": [255, 255, 255]
+        "parents": [{"class": "tree_row", "attributes": ["hover"]}],
+        "color": [210, 204, 222]
     },
     {
         "class": "sidebar_label",
@@ -874,6 +878,7 @@
         "shadow_color": [0, 0, 0],
         "shadow_offset": [0, 0]
     },
+
     // Sidebar file close
     {
         "class": "close_button",
@@ -992,15 +997,15 @@
         "content_margin": [10, 10],
         "min_size": [89, 0],
         // Default button state
-        "layer0.tint": [65,52,88],
+        "layer0.tint": [65, 52, 88],
         "layer0.opacity": 1.0,
         "layer0.inner_margin": [10, 10],
         // Pressed button setup
-        "layer1.tint": [61, 49, 83],
+        "layer1.tint": [74,58,99],
         "layer1.opacity": { "target": 0.0, "speed": 2.5, "interpolation": "smoothstep" },
         "layer1.inner_margin": [10, 10],
 
-        "layer2.tint": [65,52,88],
+        "layer2.tint": [65, 52, 88],
         "layer2.opacity": { "target": 0.0, "speed": 2.5, "interpolation": "smoothstep" },
         "layer2.inner_margin": [10, 10]
 
@@ -1070,7 +1075,7 @@
     {
         "class": "panel_control",
         // "layer0.texture": "Theme - Autumn/images/Tolopea/panel-background.png",
-        "layer0.tint":[47,38,64], 
+        "layer0.tint":[46,38,64], 
         "layer0.inner_margin": [2, 2, 2, 5],
         "layer0.opacity": 1.0
     },
@@ -1089,7 +1094,7 @@
     // Quick panel background
     {
         "class": "overlay_control",
-        "layer0.tint":  [59, 49, 79],
+        "layer0.tint":  [51, 41, 70],
         // "layer0.inner_margin": [0, 30, 30, 30],
         "layer0.opacity": 1.0,
         "layer1.tint":  [49, 34, 79],
@@ -1115,7 +1120,7 @@
     {
         "class": "quick_panel_row",
         // "layer0.texture": "Theme - Autumn/images/quick-panel-row.png",
-        "layer0.tint": [51, 41, 70],
+        "layer0.tint": [40,34,56],
         "layer0.inner_margin": [2, 2, 2, 2],
         "layer0.opacity": 1.0
     },
@@ -1134,14 +1139,14 @@
     },
     {
         "class": "quick_panel_path_label",
-        "fg": [123,101,164, 255],
+        "fg": [142, 131, 161, 255],
         "match_fg": [238, 138, 0, 255],
         "selected_fg": [31, 31, 31, 255], //selected foreground
         "selected_match_fg": [31, 31, 31, 255]        
     },
     {
         "class": "quick_panel_score_label",
-        "fg": [123,101,164, 255],
+        "fg": [142, 131, 161, 255],
         "selected_fg": [31, 31, 31, 255]
     },
 
@@ -1153,7 +1158,7 @@
     {
         "class": "mini_quick_panel_row",
         // "layer0.texture": "Theme - Autumn/images/quick-panel-row.png",
-        "layer0.tint": [51, 41, 70],
+        "layer0.tint": [40,34,56],
         "layer0.inner_margin": [2, 2, 2, 2],
         "layer0.opacity": 1.0
     },
@@ -1211,14 +1216,14 @@
     {
         "class": "icon_button_control",
         // "layer0.texture": "Theme - Autumn/images/icon-button.png",
-        "layer0.tint": [47,38,64],
+        "layer0.tint": [46,38,64],
         "layer0.opacity":1.0,     
         "content_margin": [8, 8]
     },      
     {
         "class": "icon_button_control",
         // "layer2.texture": "Theme - Autumn/images/icon-button-on.png",
-        "layer2.tint": [47,38,64],
+        "layer2.tint": [46,38,64],
         "layer2.opacity": { "target": 0.0, "speed": 3, "interpolation": "smoothstep" }       
     },
 

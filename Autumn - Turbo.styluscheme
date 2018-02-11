@@ -1,38 +1,38 @@
 unquote('@name "Autumn - Turbo";')
 
 *
-  background             : #1f1f1f;
+  background             : darken(#1f1f1f, 15%);
   caret                  : #e08300;
   findHighlight          : #f58f00;
   findHighlightForeground: #1f1f1f;
-  foreground             : #ffc499;
-  gutter                 : #1f1f1f;
-  gutterForeground       : #7b6f65;
+  foreground             : #B1886C;
+  gutter                 : darken(#1f1f1f, 15%);
+  gutterForeground       : darken(#7b6f65, 20%);
   invisibles             : #7b6f65;
-  lineHighlight          : #252525;
+  lineHighlight          : lighten(#252525, 2%);
   minimapBorder          : #3f3523;
   selection              : #3f3523;
 
 // COLORS
 
-$col0  = #f58f00 // brackethighlighter plugin - Tangerine
-$col1  = #ff9b0f // functions - West Side
-$col2  = #ffad0a // keyword - Yellow Sea
-$col3  = #fcc922 // string - Turbo
-$col4  = lighten($col3, 20%) // string punctuations - Dandelion
-$col5  = #dedb2a // html tags - Pear
-$col6  = lighten($col5, 20%) // html tags punctuation - Wattle
-$col7  = #eb6cc9 // html/css class, id - Lavender Magenta
-$col8  = #f094d3// constant - Tea Rose
-$col9  = darken($col8, 10%) // css string punctuation - Rose Bud
-$col10 = #ffa05c // general punctuation, xml tags - Atomic Tangerine
-$col11 = #ffac70 // xml punctuation - Hit Pink
-$col12 = #ffc499 // source, variable - Peach Orange
-$col13 = #f2a188 // invalid background - Sweet Pink 
-$col14 = #f2e088 // deprecatxed background - Buff
-$col15 = #918378 // java annotations - Schooner
-$col16 = #7b6f65 // comments - Sandstone
-$col17 = #242424 // invalid,deprecated foreground - Nero
+$col0  = #f58f00 // brackethighlighter plugin
+$col1  = desaturate(#CB7C0C, 25%) // functions
+$col2  = desaturate(#CB8B08, 25%) // keyword
+$col3  = desaturate(#C8A11C, 25%) // string
+$col4  = darken($col3, 25%) // string punctuations
+$col5  = desaturate(#AAA920, 25%) // html tags
+$col6  = darken($col5, 20%) // html tags punctuation
+$col7  = desaturate(#C8A11C, 25%) // html/css class, id
+$col8  = desaturate(#AA6089, 5%) // constant
+$col9  = darken($col8, 16%) // css string punctuation
+$col10 = #B17041 // general punctuation, xml tags
+$col11 = #B1794F // xml punctuation
+$col12 = #B1886C // source, variable
+$col13 = #f2a188 // invalid background
+$col14 = #f2e088 // deprecated background
+$col15 = #918378 // java annotations
+$col16 = #7b6f65 // comments
+$col17 = #242424 // invalid,deprecated foreground
 
 
 brackethighlighter.default, brackethighlighter.unmatched {
@@ -127,6 +127,10 @@ markup.changed.git_gutter {
   foreground: $col5;
 }
 
+constant.character.escape {
+  foreground: $col5;
+}
+
 punctuation.definition.tag.html, punctuation.definition.tag.begin, punctuation.definition.tag.end {
   foreground: $col6;
 }
@@ -143,7 +147,7 @@ constant.numeric {
   foreground: $col8;
 }
 
-constant.language, constant.other {
+constant.language {
   foreground: $col8;
 }
 
@@ -157,10 +161,6 @@ support.function.misc.css, support.constant.property-value.css, support.constant
 
 string.quoted.double.stylus, string.quoted.single.stylus, string.quoted.double.css, string.unquoted.css, string.quoted.single.css {
   foreground: $col8;
-}
-
-constant.character.escape {
-  foreground: $col8
 }
 
 markup.untracked.git_gutter {
@@ -184,7 +184,7 @@ punctuation.terminator, punctuation.separator, punctuation.delimiter.comma, punc
 }
 
 entity.name.tag.localname {
-  foreground: $col10;
+  foreground: $col5;
 }
 
 punctuation.definition.string.begin.json, punctuation.definition.string.end.json {
@@ -196,7 +196,7 @@ variable.language {
 }
 
 variable.other.object {
-  foreground: $col11;
+  foreground: $col12;
 }
 
 storage.type {
@@ -215,12 +215,16 @@ support.constant {
   foreground: $col11;
 }
 
+source.js support.type {
+  foreground: $col5;
+}
+
 constant.name.attribute.tag.pug {
   foreground: $col11;
 }
 
 punctuation.definition.tag.begin.xml, punctuation.definition.tag.end.xml {
-  foreground: $col11;
+  foreground: $col6;
 }
 
 support.function.import {
@@ -286,7 +290,7 @@ markup.ignored.git_gutter {
 }
 
 punctuation.definition.heading.begin {
-  foreground: $col7
+  foreground: $col1
 }
 
 punctuation.definition.list_item, 
@@ -303,10 +307,13 @@ punctuation.definition.image.begin,
 punctuation.definition.image.end,
 punctuation.definition.italic.begin,
 punctuation.definition.italic.end {
-  foreground: $col10
+  foreground: $col11
 }
 
 markup.underline.link.markdown {
   foreground: $col8
 }
 
+keyword.operator.selector.stylus, punctuation.separator.combinator.css {
+  foreground: $col1
+} 

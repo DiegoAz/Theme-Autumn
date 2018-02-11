@@ -67,12 +67,6 @@
 
   You can activate one of twelve (12) color schemes from 3 different background colors
 
-  Some of them are:
-
-  ![Autumn color scheme](Autumn.PNG)
-  ![Tolopea color scheme](Tolopea.PNG)
-  ![Birch color scheme](Birch.PNG) 
-
   The name of them came from [Name that Color](http://chir.ag/projects/name-that-color/) or [Color Name & Hue](http://www.color-blindness.com/color-name-hue/). Thanks to its creators  
 
 

@@ -228,7 +228,7 @@
     {
         "class": "tab_label",
         "parents": [{"class": "tab_control", "attributes": ["selected", "file_medium"]}],
-        "fg": [255, 255, 255, 255],
+        "fg": [181, 176, 191, 230],
         "shadow_color": [0, 0, 0, 100],
         "shadow_offset": [0, -1]
     },
@@ -239,10 +239,12 @@
         "shadow_color": [0, 0, 0, 100],
         "shadow_offset": [0, -1]
     },
+
+    
     {
         "class": "tab_label",
         "parents": [{"class": "tab_control", "attributes": ["selected", "file_medium_dark"]}],
-        "fg": [255, 255, 255, 230],
+        "fg": [181, 176, 191, 230],
         "shadow_color": [0, 0, 0, 255],
         "shadow_offset": [0, -1]
     },
@@ -256,7 +258,7 @@
     {
         "class": "tab_label",
         "parents": [{"class": "tab_control", "attributes": ["selected", "file_dark"]}],
-        "fg": [255, 255, 255, 230],
+        "fg": [181, 176, 191, 230],
         "shadow_color": [0, 0, 0, 255],
         "shadow_offset": [0, -1]
     },
@@ -294,6 +296,7 @@
         "attributes": ["transient"],
         "font.italic": false
     },
+
 
     // Tab Close Buttons
     {
@@ -777,7 +780,7 @@
     // Sidebar container
     {
         "class": "sidebar_container",
-        //- "layer0.tint": [49, 52, 55],
+        "layer0.tint": [49, 52, 55],
         "layer0.opacity": 1.0,
         "layer0.draw_center": false,
         "layer0.inner_margin": [0, 0, 0, 0],
@@ -798,7 +801,8 @@
     // Sidebar rows
     {
         "class": "tree_row",
-        "layer0.texture": "Theme - Autumn/images/sidebar-row-selected.png",
+        // "layer0.texture": "Theme - Autumn/images/sidebar-row-selected.png",
+        "layer0.tint" : [26,26,26] ,
         "layer0.opacity": 0.0,
         "layer0.inner_margin": [1,1]
     },
@@ -820,43 +824,35 @@
     // Sidebar heading with Roboto Mono
     {
         "class": "sidebar_heading",
-        "settings": ["theme_autumn_roboto_font"],
-        "color": [148, 149, 151],
-        "font.bold": true,
-        "shadow_color": [148, 149, 151],
-        "shadow_offset": [0, 0],        
+        "settings": ["theme_autumn_roboto_font"],        
         "font.face": "Roboto Mono",
-        "font.size": 11
+       
     },
     // Sidebar entry
     {
         "class": "sidebar_label",
-        "color": [212, 212, 213],
-        "shadow_offset": [0, 0],
-        
+        "color": [181, 176, 191],
+        "shadow_offset": [0, 0],        
         "font.size": 12
     },
      // Sidebar entry with Roboto Mono 
     {
         "class": "sidebar_label",
-        "settings": ["theme_autumn_roboto_font"],
-        "color": [212, 212, 213],
-        "shadow_offset": [0, 0],
-        "font.face": "Roboto Mono",
-        "font.size": 12
+        "settings": ["theme_autumn_roboto_font"],"font.face": "Roboto Mono",
+        
     },
     // Sidebar folder entry
     {
         "class": "sidebar_label",
         "parents": [{"class": "tree_row", "attributes": ["expandable"]}],
-        "color": [212, 212, 213],
+        "color": [181, 176, 191],
         "shadow_color": [0, 0, 0],
         "shadow_offset": [0, 0]
     },
     {
         "class": "sidebar_label",
-        "parents": [{"class": "tree_row", "attributes": ["expandable", "hover"]}],
-        "color": [255, 255, 255]
+        "parents": [{"class": "tree_row", "attributes": ["hover"]}],
+        "color": [210, 204, 222]
     },
     {
         "class": "sidebar_label",
@@ -868,7 +864,7 @@
     {
         "class": "sidebar_label",
         "parents": [{"class": "tree_row", "attributes": ["selected"]}],
-        "color": [255, 255, 255],
+        "color": [189, 178, 210],
         "shadow_color": [0, 0, 0],
         "shadow_offset": [0, 0]
     },
@@ -1020,7 +1016,7 @@
         "layer0.inner_margin": [10, 10],
         // Pressed button setup
         "layer1.texture": "",
-        "layer1.tint": [56, 56, 56],
+        "layer1.tint": [74, 74, 74],
         "layer1.opacity": { "target": 0.0, "speed": 2.5, "interpolation": "smoothstep" },
         "layer1.inner_margin": [10, 10],
         "layer2.texture": "",
@@ -1148,7 +1144,7 @@
     {
         "class": "auto_complete",
         "row_padding": [2, 2],
-        "layer0.tint": [25, 25, 25],
+        "layer0.tint": [37, 37, 38],
         "layer0.opacity": 1.0,
         "dark_content": false
     },
