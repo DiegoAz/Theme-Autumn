@@ -31,6 +31,42 @@
 				<string>#3f3523</string>
 				<key>selection</key>
 				<string>#3f3523</string>
+				<key>popupCss</key>
+				<string>
+html {	
+  background-color: #2E241D;
+  color: #BF9779;
+  padding: 16px;
+}
+a {
+  color: #BF9779;  
+  font-family:Hack;
+  font-size: 15px;  
+}
+.error, .deleted {
+  color: #E53935;
+}
+.success, .inserted {
+  color: #91B859;
+}
+.warning, .modified {
+  color: #FFB62C;
+}
+.type {
+  color: #39ADB5;
+  font-style: italic;
+}
+.param {
+  color: #F76D47;
+}
+.current {
+  text-decoration: underline;
+}
+h1 {	
+	font-family:Roboto Mono;	
+}
+
+</string>
 			</dict>
 		</dict>
 		<dict>

@@ -1,5 +1,7 @@
 unquote('@name "Autumn Tolopea - Lavender Magenta";')
 
+$popupCss = "html{background-color:#261E33;color:#B1886C;padding:16px;}a{color: #797387;font-family:"Fira Mono";font-size: 16px;margin-bottom:100px;}.error,.deleted{color:#D14766;font-weight:initial;}.success,.inserted{color:#9b9a2f}.warning,.modified{color:#B57B2A}.type{color:#39adb5;font-style:italic}.param{color:#f76d47}.current{text-decoration:underline}#show-definitions h1{font-family:"Fira Mono";color: #797387;}.scope-hunter .header{font-size:1em; color:#a86289} .scope-hunter *{font-weight:normal;} "
+
 *
   background             : darken(#1F1A2B, 15%);
   caret                  : #e08300;
@@ -12,32 +14,49 @@ unquote('@name "Autumn Tolopea - Lavender Magenta";')
   lineHighlight          : lighten(#211C2E, 3%);
   minimapBorder          : #554474;
   selection              : #3f3523;
+  popupCss               : $popupCss
+  tags_options           : foreground underline;
+  tags_foreground        : #C27A17;
+
 
 // COLORS
 
 $col0  = #f58f00 // brackethighlighter plugin
-$col1  = desaturate(#CB7C0C, 25%) // functions
-$col2  = desaturate(#CB8B08, 25%) // keyword
+$col1  = desaturate(#CB7C0C, 26%) // functions
+$col2  = desaturate(#CB8B08, 28%) // keyword
 $col3  = desaturate(#AA6089, 5%) // string
 $col4  = darken($col3, 25%) // string punctuations
-$col5  = desaturate(#AAA920, 25%) // html tags
+$col5  = desaturate(#A1A01E, 25%) // html tags
 $col6  = darken($col5, 20%) // html tags punctuation
-$col7  = desaturate(#C8A11C, 25%) // html/css class, id
+$col7  = desaturate(#C8A11C, 22%) // html/css class, id
 $col8  = desaturate(#AB6179, 5%) // constant
 $col9  = darken($col8, 16%) // css string punctuation
 $col10 = #B17041 // general punctuation, xml tags
 $col11 = #B1794F // xml punctuation
 $col12 = #B1886C // source, variable
-$col13 = #f2a188 // invalid background
+$col13 = desaturate(#D7365A, 5%) // invalid background
 $col14 = #f2e088 // deprecated background
 $col15 = lighten(#222027, 35%) // java annotations
 $col16 = lighten(#222027, 35%); // comments
 $col17 = #242424 // invalid,deprecated foreground
 $col18 = desaturate(#AA6089, 0%)
+$col19 = desaturate(#D7365A, 5%)
 
 
 brackethighlighter.default, brackethighlighter.unmatched {
   foreground: $col0;
+}
+
+region.redish markup.deleted.sublime_linter markup.error.sublime_linter, sublimehaskell.mark.error {
+  foreground: $col19
+}
+
+region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter, sublimehaskell.mark.warning {
+  foreground: #C27A17;
+}
+
+sublimehaskell.mark.hint {
+  foreground: $col5;
 }
 
 entity.name.function {
@@ -180,7 +199,11 @@ keyword.control.stylus {
   foreground: $col10;
 }
 
-punctuation.terminator, punctuation.separator, punctuation.delimiter.comma, punctuation.section.brackets {
+punctuation.terminator, punctuation.separator{
+  foreground: $col10
+}
+
+punctuation.delimiter.comma, punctuation.section.brackets {
   foreground: $col10;
 }
 
@@ -260,8 +283,14 @@ entity.name {
   foreground: $col12;
 }
 
-entity.name.class, entity.other.inherited-class {
+entity.name.type {
   foreground: $col12;
+  fontStyle: bold;  
+}
+
+entity.name.class, entity.other.inherited-class, entity.name.type.class, meta.definition.class.implemented.interfaces {
+  foreground: $col12
+  fontStyle: none
 }
 
 invalid {
@@ -277,6 +306,26 @@ invalid.deprecated {
 variable.annotation, punctuation.definition.annotation, meta.annotation.parameters, meta.annotation.parameters string.quoted.double, meta.annotation.parameters string.quoted.double punctuation.definition.string.begin, meta.annotation.parameters string.quoted.double punctuation.definition.string.end, meta.annotation.parameters variable.function, meta.annotation.parameters meta.assignment.rhs keyword.operator.assignment {
   foreground: $col15;
 }
+
+storage.type.annotation, 
+meta.declaration.annotation.groovy punctuation.definition.annotation-arguments.begin.groovy, 
+meta.declaration.annotation.groovy punctuation.definition.annotation-arguments.end.groovy,
+meta.declaration.annotation.groovy string.quoted.single.groovy, 
+meta.declaration.annotation.groovy string.quoted.single.groovy punctuation.definition.string.begin.groovy, 
+meta.declaration.annotation.groovy string.quoted.single.groovy punctuation.definition.string.end.groovy, 
+source.groovy.grails.domain meta.declaration.annotation.groovy constant.other.key.groovy,
+source.groovy.grails.domain meta.declaration.annotation.groovy keyword.operator.assignment.groovy,
+source.groovy.grails.domain meta.declaration.annotation.groovy constant.language.groovy,
+source.groovy.grails.domain meta.declaration.annotation.groovy punctuation.definition.separator.groovy,
+source.groovy.grails.controller meta.declaration.annotation.groovy meta.structure.groovy punctuation.definition.structure.begin.groovy,
+source.groovy.grails.controller meta.declaration.annotation.groovy meta.structure.groovy punctuation.definition.structure.end.groovy,
+source.groovy.grails.controller meta.declaration.annotation.groovy constant.other.key.groovy,
+source.groovy.grails.controller meta.declaration.annotation.groovy constant.language.groovy, 
+source.groovy.grails.controller meta.declaration.annotation.groovy keyword.operator.assignment.groovy, 
+source.groovy.grails.service meta.declaration.annotation.groovy storage.type.class.groovy{
+  foreground $col15
+}
+
 
 comment {
   foreground: $col16;
@@ -318,4 +367,14 @@ markup.underline.link.markdown {
 keyword.operator.selector.stylus, punctuation.separator.combinator.css {
   foreground: $col1
 } 
+
+// groovy
+
+
+text.html.gsp punctuation.definition.embedded.begin.groovy, 
+text.html.gsp punctuation.definition.embedded.end.groovy, 
+source.groovy meta.block.groovy meta.block.groovy string.quoted.double.groovy source.groovy.embedded.source punctuation.section.embedded.groovy,
+ {
+  foreground $col11
+}
 

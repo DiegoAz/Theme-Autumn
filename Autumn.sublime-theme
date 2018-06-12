@@ -200,16 +200,17 @@
         "font.italic": false,
         "font.size": 11
     },
-     // Tab Labels with Roboto Mono
+      // Tab Labels with Roboto Mono 
     {
         "class": "tab_label",
-        "settings":["theme_autumn_roboto_font"],
-        "fg": [0, 0, 0, 255],
-        "shadow_color": [255, 255, 255, 80],
-        "shadow_offset": [0, 1],
-        "font.italic": false,
+        "settings":["theme_autumn_roboto_font"],       
         "font.face": "Roboto Mono Medium",
-        "font.size": 11
+    },
+     // Tab Labels with Fira Mono
+    {
+        "class": "tab_label",
+        "settings":["theme_autumn_fira_font"],       
+        "font.face": "Fira Mono",
     },
     {
         "class": "tab_label",
@@ -682,12 +683,14 @@
     {
         "class": "label_control",
         "settings":["theme_autumn_roboto_font"],
-        "color": [201, 202, 203],
-        "shadow_color": [201, 202, 203],
-        "shadow_offset": [0, 0],
-        "font.bold" : false,
-        "font.size" : 11,
         "font.face": "Roboto Mono Medium",
+    },
+
+      // General labels with Fira Mono
+    {
+        "class": "label_control",
+        "settings":["theme_autumn_fira_font"],
+        "font.face": "Fira Mono",
     },
     // Text field labels
     {
@@ -720,7 +723,7 @@
     // Tooltip container
     {
         "class": "tool_tip_control",
-        // "layer0.texture": "Theme - Autumn/images/tooltip.png",
+        "layer0.texture": "Theme - Autumn/images/tooltip.png",
         "layer0.tint": "[255,255,255]",
         "layer0.inner_margin": [1, 1],
         "layer0.opacity": 0.95,
@@ -731,14 +734,18 @@
         "class": "tool_tip_label_control",
         "color": [38, 30, 24]       
     },
-    // Tooltip content with Roboto Mono
+   // Tooltip content with Roboto Mono
     {
         "class": "tool_tip_label_control",
         "settings":["theme_autumn_roboto_font"],
-        "color": [38, 30, 24],
         "font.face": "Roboto Mono Medium"
     },
-
+    // Tooltip content with Fira Mono
+    {
+        "class": "tool_tip_label_control",
+        "settings":["theme_autumn_fira_font"],
+        "font.face": "Fira Mono"
+    },
 //
 // STATUS BAR
 
@@ -780,18 +787,18 @@
     // Sidebar container
     {
         "class": "sidebar_container",
-        "layer0.tint": [49, 52, 55],
+        "layer0.tint": [36, 36, 36],
         "layer0.opacity": 1.0,
         "layer0.draw_center": false,
         "layer0.inner_margin": [0, 0, 0, 0],
-        "content_margin": [0, 0, 0, 0]
+        "content_margin": [5,10, 0, 0]
     },
     // Sidebar tree
     {
         "class": "sidebar_tree",
-        "row_padding": [8, 4],
-        "indent": 14,
-        "indent_offset": 20,
+        "row_padding": [19,10],
+        "indent":20,
+        "indent_offset": 0,
         "indent_top_level": false,
         "layer0.tint": [36, 36, 36],
         "layer0.opacity": 1.0,
@@ -810,49 +817,61 @@
     {
         "class": "tree_row",
         "attributes": ["selected"],
-        "layer0.opacity": 1.0
+        "layer0.opacity": 0.0
     },
     // Sidebar heading
     {
         "class": "sidebar_heading",
-        "color": [148, 149, 151],
+        "color": [153,153,153],
         "font.bold": true,
         "shadow_color": [148, 149, 151],
         "shadow_offset": [0, 0],   
         "font.size": 11
     },
-    // Sidebar heading with Roboto Mono
+     // Sidebar heading with Roboto Mono
     {
         "class": "sidebar_heading",
-        "settings": ["theme_autumn_roboto_font"],        
+        "settings": ["theme_autumn_roboto_font"],          
         "font.face": "Roboto Mono",
-       
+    },
+    // Sidebar heading with Fira Mono
+    {
+        "class": "sidebar_heading",
+        "settings": ["theme_autumn_fira_font"],          
+        "font.face": "Fira Mono",
     },
     // Sidebar entry
     {
         "class": "sidebar_label",
-        "color": [181, 176, 191],
+        "color": [153,153,153],
         "shadow_offset": [0, 0],        
         "font.size": 12
     },
-     // Sidebar entry with Roboto Mono 
+    // Sidebar entry with Roboto Mono
     {
         "class": "sidebar_label",
-        "settings": ["theme_autumn_roboto_font"],"font.face": "Roboto Mono",
-        
+        "settings": ["theme_autumn_roboto_font"],       
+        "font.face": "Roboto Mono"
+    },
+
+     // Sidebar entry with Fira Mono
+    {
+        "class": "sidebar_label",
+        "settings": ["theme_autumn_fira_font"],       
+        "font.face": "Fira Mono"
     },
     // Sidebar folder entry
     {
         "class": "sidebar_label",
         "parents": [{"class": "tree_row", "attributes": ["expandable"]}],
-        "color": [181, 176, 191],
+        "color": [153,153,153],
         "shadow_color": [0, 0, 0],
         "shadow_offset": [0, 0]
     },
     {
         "class": "sidebar_label",
         "parents": [{"class": "tree_row", "attributes": ["hover"]}],
-        "color": [210, 204, 222]
+        "color": [191,191,191]
     },
     {
         "class": "sidebar_label",
@@ -864,7 +883,7 @@
     {
         "class": "sidebar_label",
         "parents": [{"class": "tree_row", "attributes": ["selected"]}],
-        "color": [189, 178, 210],
+        "color": [191,191,191],
         "shadow_color": [0, 0, 0],
         "shadow_offset": [0, 0]
     },
@@ -920,66 +939,164 @@
     },
 
 
-    // Sidebar group closed
-    {
-        "class": "disclosure_button_control",
-        "content_margin": [0, 6, 18, 7],
+    // Folder icons
+
+   {
+        "class": "icon_folder",
         "layer0.texture": "Theme - Autumn/images/group-closed.png",
+        "layer0.opacity": 1,
+        "content_margin": [10, 9, 11, 9],
+    },
+    
+    {
+        "class": "icon_folder",
+        "parents": [{"class": "tree_row", "attributes": ["expanded"]}],
+        "layer0.texture": "Theme - Autumn/images/group-open.png",
+        // "content_margin": [9, 8]
+    },
+
+    {
+      "class": "icon_folder_loading",
+      "layer0.texture":
+      {
+        "keyframes":
+        [
+          "Theme - Autumn/images/loader8.png",
+          "Theme - Autumn/images/loader7.png",
+          "Theme - Autumn/images/loader6.png",
+          "Theme - Autumn/images/loader5.png",
+          "Theme - Autumn/images/loader4.png",
+          "Theme - Autumn/images/loader3.png",
+          "Theme - Autumn/images/loader2.png",
+          "Theme - Autumn/images/loader1.png",
+          "Theme - Autumn/images/loader.png",
+          "Theme - Autumn/images/loader1.png",
+          "Theme - Autumn/images/loader2.png",
+          "Theme - Autumn/images/loader3.png",
+          "Theme - Autumn/images/loader4.png",
+          "Theme - Autumn/images/loader5.png",
+          "Theme - Autumn/images/loader6.png",
+          "Theme - Autumn/images/loader7.png",
+          "Theme - Autumn/images/loader8.png",
+        ],
+        "loop": true,
+        "frame_time": 0.085,
+      },  
+      "layer0.opacity": 1.0,
+      "content_margin": [10, 9, 11, 9],
+    },
+
+    // symlink folder
+
+    {
+        "class": "icon_folder_dup",
+        "layer0.texture": "Theme - Autumn/images/symlink.png",
         "layer0.opacity": 1.0,
-        "layer0.inner_margin": 0,
-        
- 
-    },   
-    
-    
+        "content_margin": [10, 9, 11, 9],
+    },
+   
+
     // Sidebar group open
     {
-        "class": "disclosure_button_control",
-        "attributes": ["expanded"],
+        "class": "icon_folder",
+        "parents": [{"class": "tree_row", "attributes": ["expanded"]}],
         "layer0.texture": "Theme - Autumn/images/group-open.png"
     },
 
     {
-        "class": "disclosure_button_control",
+        "class": "icon_folder",
         "settings":["theme_autumn_orange_folders"],
         "layer0.texture": "Theme - Autumn/images/group-closed-orange.png",
     },
 
      {
-        "class": "disclosure_button_control",
+        "class": "icon_folder",
         "settings":["theme_autumn_orange_folders"],
-        "attributes": ["expanded"],
+        "parents": [{"class": "tree_row", "attributes": ["expanded"]}],
         "layer0.texture": "Theme - Autumn/images/group-open-orange.png"
     },
 
     {
-        "class": "disclosure_button_control",
+        "class": "icon_folder",
         "settings":["theme_autumn_rose_folders"],
         "layer0.texture": "Theme - Autumn/images/group-closed-rose.png",
     },
 
      {
-        "class": "disclosure_button_control",
+        "class": "icon_folder",
         "settings":["theme_autumn_rose_folders"],
-        "attributes": ["expanded"],
+        "parents": [{"class": "tree_row", "attributes": ["expanded"]}],
         "layer0.texture": "Theme - Autumn/images/group-open-rose.png"
     },
 
 
+   
+// gray2
+
     {
-        "class": "disclosure_button_control",
+        "class": "icon_folder",
+        "settings":["theme_autumn_gray2_folders"],
+        "layer0.texture": "Theme - Autumn/images/group-closed-gray2.png",
+    },
+
+     {
+        "class": "icon_folder",
+        "settings":["theme_autumn_gray2_folders"],
+        "parents": [{"class": "tree_row", "attributes": ["expanded"]}],
+        "layer0.texture": "Theme - Autumn/images/group-open-gray2.png"
+    },
+
+    
+
+    // yellow
+
+
+    {
+        "class": "icon_folder",
+        "settings":["theme_autumn_yellow_folders"],
+        "layer0.texture": "Theme - Autumn/images/group-closed-yellow.png",
+    },
+
+     {
+        "class": "icon_folder",
+        "settings":["theme_autumn_yellow_folders"],
+        "parents": [{"class": "tree_row", "attributes": ["expanded"]}],
+        "layer0.texture": "Theme - Autumn/images/group-open-yellow.png"
+    },
+
+    // birch
+
+    // {
+    //     "class": "icon_folder",
+    //     "settings":["theme_autumn_birch_folders"],
+    //     "layer0.texture": "Theme - Autumn/images/group-closed-birch.png",
+    // },
+
+    //  {
+    //     "class": "icon_folder",
+    //     "settings":["theme_autumn_birch_folders"],
+    //     "parents": [{"class": "tree_row", "attributes": ["expanded"]}],
+    //     "layer0.texture": "Theme - Autumn/images/group-open-birch.png"
+    // }, 
+
+     {
+        "class": "icon_folder",
+        "settings":["theme_autumn_gray_folders"],
+       "parents": [{"class": "tree_row", "attributes": ["expanded"]}],
+        "layer0.texture": "Theme - Autumn/images/group-open-gray.png"
+    },  
+
+     {
+        "class": "icon_folder",
         "settings":["theme_autumn_gray_folders"],
         "layer0.texture": "Theme - Autumn/images/group-closed-gray.png",
     },
 
-     {
-        "class": "disclosure_button_control",
-        "settings":["theme_autumn_gray_folders"],
-        "attributes": ["expanded"],
-        "layer0.texture": "Theme - Autumn/images/group-open-gray.png"
-    },       
+    
+           
+        
+        
    
-
 //
 // STANDARD TEXT BUTTONS
 

@@ -29,8 +29,14 @@
 				<string>#272136</string>
 				<key>minimapBorder</key>
 				<string>#554474</string>
+				<key>popupCss</key>
+				<string>html{background-color:#261E33;color:#B1886C;padding:16px;}a{color: #797387;font-family: Fira Mono ;font-size: 16px;margin-bottom:100px;}.error,.deleted{color:#D14766;font-weight:initial;}.success,.inserted{color:#9b9a2f}.warning,.modified{color:#B57B2A}.type{color:#39adb5;font-style:italic}.param{color:#f76d47}.current{text-decoration:underline}#show-definitions h1{font-family: Fira Mono ;color: #797387;}.scope-hunter .header{font-size:1em; color:#a86289} .scope-hunter *{font-weight:normal;} </string>
 				<key>selection</key>
 				<string>#3f3523</string>
+				<key>tags_foreground</key>
+				<string>#c27a17</string>
+				<key>tags_options</key>
+				<string>foreground underline</string>
 			</dict>
 		</dict>
 		<dict>
@@ -44,11 +50,38 @@
 		</dict>
 		<dict>
 			<key>scope</key>
+			<string>region.redish markup.deleted.sublime_linter markup.error.sublime_linter, sublimehaskell.mark.error</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#d33a5c</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>scope</key>
+			<string>region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter, sublimehaskell.mark.warning</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#c27a17</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>scope</key>
+			<string>sublimehaskell.mark.hint</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#91902e</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>scope</key>
 			<string>entity.name.function</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#b37824</string>
+				<string>#b27825</string>
 			</dict>
 		</dict>
 		<dict>
@@ -57,7 +90,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#b37824</string>
+				<string>#b27825</string>
 			</dict>
 		</dict>
 		<dict>
@@ -66,7 +99,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#b37824</string>
+				<string>#b27825</string>
 			</dict>
 		</dict>
 		<dict>
@@ -75,7 +108,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#b37824</string>
+				<string>#b27825</string>
 			</dict>
 		</dict>
 		<dict>
@@ -84,7 +117,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#b37824</string>
+				<string>#b27825</string>
 			</dict>
 		</dict>
 		<dict>
@@ -93,7 +126,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#b37824</string>
+				<string>#b27825</string>
 			</dict>
 		</dict>
 		<dict>
@@ -102,7 +135,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#b38320</string>
+				<string>#b08223</string>
 			</dict>
 		</dict>
 		<dict>
@@ -111,7 +144,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#b38320</string>
+				<string>#b08223</string>
 			</dict>
 		</dict>
 		<dict>
@@ -120,7 +153,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#b38320</string>
+				<string>#b08223</string>
 			</dict>
 		</dict>
 		<dict>
@@ -129,7 +162,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#b38320</string>
+				<string>#b08223</string>
 			</dict>
 		</dict>
 		<dict>
@@ -138,7 +171,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#b38320</string>
+				<string>#b08223</string>
 			</dict>
 		</dict>
 		<dict>
@@ -147,7 +180,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#b38320</string>
+				<string>#b08223</string>
 			</dict>
 		</dict>
 		<dict>
@@ -183,7 +216,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#999831</string>
+				<string>#91902e</string>
 			</dict>
 		</dict>
 		<dict>
@@ -192,7 +225,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#999831</string>
+				<string>#91902e</string>
 			</dict>
 		</dict>
 		<dict>
@@ -201,7 +234,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#999831</string>
+				<string>#91902e</string>
 			</dict>
 		</dict>
 		<dict>
@@ -210,7 +243,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#999831</string>
+				<string>#91902e</string>
 			</dict>
 		</dict>
 		<dict>
@@ -219,7 +252,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#999831</string>
+				<string>#91902e</string>
 			</dict>
 		</dict>
 		<dict>
@@ -228,7 +261,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#999831</string>
+				<string>#91902e</string>
 			</dict>
 		</dict>
 		<dict>
@@ -237,7 +270,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#999831</string>
+				<string>#91902e</string>
 			</dict>
 		</dict>
 		<dict>
@@ -246,7 +279,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#999831</string>
+				<string>#91902e</string>
 			</dict>
 		</dict>
 		<dict>
@@ -255,7 +288,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#7a7a27</string>
+				<string>#747325</string>
 			</dict>
 		</dict>
 		<dict>
@@ -264,7 +297,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#b39531</string>
+				<string>#b5972f</string>
 			</dict>
 		</dict>
 		<dict>
@@ -359,7 +392,16 @@
 		</dict>
 		<dict>
 			<key>scope</key>
-			<string>punctuation.terminator, punctuation.separator, punctuation.delimiter.comma, punctuation.section.brackets</string>
+			<string>punctuation.terminator, punctuation.separator</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#b17041</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>scope</key>
+			<string>punctuation.delimiter.comma, punctuation.section.brackets</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
@@ -372,7 +414,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#999831</string>
+				<string>#91902e</string>
 			</dict>
 		</dict>
 		<dict>
@@ -444,7 +486,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#999831</string>
+				<string>#91902e</string>
 			</dict>
 		</dict>
 		<dict>
@@ -462,7 +504,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#7a7a27</string>
+				<string>#747325</string>
 			</dict>
 		</dict>
 		<dict>
@@ -539,9 +581,22 @@
 		</dict>
 		<dict>
 			<key>scope</key>
-			<string>entity.name.class, entity.other.inherited-class</string>
+			<string>entity.name.type</string>
 			<key>settings</key>
 			<dict>
+				<key>fontStyle</key>
+				<string>bold</string>
+				<key>foreground</key>
+				<string>#b1886c</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>scope</key>
+			<string>entity.name.class, entity.other.inherited-class, entity.name.type.class, meta.definition.class.implemented.interfaces</string>
+			<key>settings</key>
+			<dict>
+				<key>fontStyle</key>
+				<string></string>
 				<key>foreground</key>
 				<string>#b1886c</string>
 			</dict>
@@ -552,7 +607,7 @@
 			<key>settings</key>
 			<dict>
 				<key>background</key>
-				<string>#f2a188</string>
+				<string>#d33a5c</string>
 				<key>foreground</key>
 				<string>#242424</string>
 			</dict>
@@ -571,6 +626,15 @@
 		<dict>
 			<key>scope</key>
 			<string>variable.annotation, punctuation.definition.annotation, meta.annotation.parameters, meta.annotation.parameters string.quoted.double, meta.annotation.parameters string.quoted.double punctuation.definition.string.begin, meta.annotation.parameters string.quoted.double punctuation.definition.string.end, meta.annotation.parameters variable.function, meta.annotation.parameters meta.assignment.rhs keyword.operator.assignment</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#6c657b</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>scope</key>
+			<string>storage.type.annotation, meta.declaration.annotation.groovy punctuation.definition.annotation-arguments.begin.groovy, meta.declaration.annotation.groovy punctuation.definition.annotation-arguments.end.groovy, meta.declaration.annotation.groovy string.quoted.single.groovy, meta.declaration.annotation.groovy string.quoted.single.groovy punctuation.definition.string.begin.groovy, meta.declaration.annotation.groovy string.quoted.single.groovy punctuation.definition.string.end.groovy, source.groovy.grails.domain meta.declaration.annotation.groovy constant.other.key.groovy, source.groovy.grails.domain meta.declaration.annotation.groovy keyword.operator.assignment.groovy, source.groovy.grails.domain meta.declaration.annotation.groovy constant.language.groovy, source.groovy.grails.domain meta.declaration.annotation.groovy punctuation.definition.separator.groovy, source.groovy.grails.controller meta.declaration.annotation.groovy meta.structure.groovy punctuation.definition.structure.begin.groovy, source.groovy.grails.controller meta.declaration.annotation.groovy meta.structure.groovy punctuation.definition.structure.end.groovy, source.groovy.grails.controller meta.declaration.annotation.groovy constant.other.key.groovy, source.groovy.grails.controller meta.declaration.annotation.groovy constant.language.groovy, source.groovy.grails.controller meta.declaration.annotation.groovy keyword.operator.assignment.groovy, source.groovy.grails.service meta.declaration.annotation.groovy storage.type.class.groovy</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
@@ -610,7 +674,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#b37824</string>
+				<string>#b27825</string>
 			</dict>
 		</dict>
 		<dict>
@@ -637,7 +701,16 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#b37824</string>
+				<string>#b27825</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>scope</key>
+			<string>text.html.gsp punctuation.definition.embedded.begin.groovy, text.html.gsp punctuation.definition.embedded.end.groovy, source.groovy meta.block.groovy meta.block.groovy string.quoted.double.groovy source.groovy.embedded.source punctuation.section.embedded.groovy</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#b1794f</string>
 			</dict>
 		</dict>
 	</array>

@@ -9,10 +9,10 @@
         "layer1.texture": "Theme - Autumn/Theme - Classic/tabset_background_transparent.png",
         "layer1.inner_margin": [2, 6],
         "layer1.opacity": 1.0,
-        "content_margin": [3, 0, 3, 1],
+        "content_margin": [3, 0, 3, 0],
         "tab_overlap": 17,
         "tab_width": 180,
-        "tab_min_width": 48,
+        "tab_min_width": 48,        
         "tab_height": 35,
         "mouse_wheel_switch": false
     },
@@ -167,29 +167,6 @@
         "layer1.texture": "Theme - Autumn/Theme - Classic/dark_tabset_background_transparent.png"
     },
 
-    // remove icons
-
-    {
-        "class": "icon_file_type",
-        "content_margin": [0,0]
-    },
-    {
-        "class": "icon_folder",
-        "content_margin": [0,0]
-    },
-    {
-        "class": "icon_folder_loading",
-        "content_margin": [0,0]
-    },
-
-    {
-        "class": "icon_use_buffer",
-        "layer0.texture": "Theme - Autumn/images/icons/use_buffer.png",
-        "layer0.opacity": 1.0,
-        "content_margin": [8, 8]
-    },
-
-
    
     // Tab Labels
     {
@@ -200,16 +177,17 @@
         "font.italic": false,
         "font.size": 11
     },
-     // Tab Labels with Roboto Mono
+     // Tab Labels with Roboto Mono 
     {
         "class": "tab_label",
-        "settings":["theme_autumn_roboto_font"],
-        "fg": [0, 0, 0, 255],
-        "shadow_color": [255, 255, 255, 80],
-        "shadow_offset": [0, 1],
-        "font.italic": false,
+        "settings":["theme_autumn_roboto_font"],       
         "font.face": "Roboto Mono Medium",
-        "font.size": 11
+    },
+     // Tab Labels with Fira Mono
+    {
+        "class": "tab_label",
+        "settings":["theme_autumn_fira_font"],       
+        "font.face": "Fira Mono",
     },
     {
         "class": "tab_label",
@@ -322,7 +300,7 @@
         "layer0.opacity": 0.0,
         "layer1.opacity": 0.0,
         "layer2.opacity": 0.0,
-        "layer3.texture": "Theme - Autumn/images/tab-dirty.png",
+        "layer3.texture": "Theme - Autumn/images/tab-dirty.png", 
         "layer3.opacity": 1
     },
     
@@ -682,13 +660,16 @@
     {
         "class": "label_control",
         "settings":["theme_autumn_roboto_font"],
-        "color": [201, 202, 203],
-        "shadow_color": [201, 202, 203],
-        "shadow_offset": [0, 0],
-        "font.bold" : false,
-        "font.size" : 11,
         "font.face": "Roboto Mono Medium",
     },
+
+      // General labels with Fira Mono
+    {
+        "class": "label_control",
+        "settings":["theme_autumn_fira_font"],
+        "font.face": "Fira Mono",
+    },
+
     // Text field labels
     {
         "class": "label_control",
@@ -720,7 +701,7 @@
     // Tooltip container
     {
         "class": "tool_tip_control",
-        // "layer0.texture": "Theme - Autumn/images/tooltip.png",
+        "layer0.texture": "Theme - Autumn/images/tooltip.png",
         "layer0.tint": "[255,255,255]",
         "layer0.inner_margin": [1, 1],
         "layer0.opacity": 0.95,
@@ -735,8 +716,13 @@
     {
         "class": "tool_tip_label_control",
         "settings":["theme_autumn_roboto_font"],
-        "color": [38, 30, 24],
         "font.face": "Roboto Mono Medium"
+    },
+    // Tooltip content with Fira Mono
+    {
+        "class": "tool_tip_label_control",
+        "settings":["theme_autumn_fira_font"],
+        "font.face": "Fira Mono"
     },
 //
 // STATUS BAR
@@ -784,18 +770,18 @@
         "layer0.opacity": 1.0,
         "layer0.draw_center": false,
         "layer0.inner_margin": [0, 0, 0, 0],
-        "content_margin": [0, 0, 0, 0]
+        "content_margin": [5, 10, 0, 0]
     },
-    // Sidebar tree
+    // Sidebar tree 
     {
         "class": "sidebar_tree",
-        "row_padding": [8, 4],
-        "indent": 14,
-        "indent_offset": 20,
+        "row_padding": [19, 10],
+        "indent": 20,
+        "indent_offset": 0,  
         "indent_top_level": false,
         "layer0.tint": [33,28,46],
         "layer0.opacity": 1.0,
-        "dark_content": false
+        "dark_content": false,
     },
    
    // Sidebar rows
@@ -811,12 +797,12 @@
     {
         "class": "tree_row",
         "attributes": ["selected"],
-        "layer0.opacity": 1.0
+        "layer0.opacity": 0.0
     },
     // Sidebar heading
     {
         "class": "sidebar_heading",
-        "color": [148, 149, 151],
+        "color": [130, 127, 138],
         "font.bold": true,
         "shadow_color": [148, 149, 151],
         "shadow_offset": [0, 0],   
@@ -827,27 +813,38 @@
         "class": "sidebar_heading",
         "settings": ["theme_autumn_roboto_font"],          
         "font.face": "Roboto Mono",
-        
+    },
+    // Sidebar heading with Fira Mono
+    {
+        "class": "sidebar_heading",
+        "settings": ["theme_autumn_fira_font"],          
+        "font.face": "Fira Mono",
     },
     // Sidebar entry
     {
         "class": "sidebar_label",
-        "color": [181, 176, 191],
+        "color": [130, 127, 138],
         "shadow_offset": [0, 0],        
-        "font.size": 12
+        "font.size": 12        
     },
      // Sidebar entry with Roboto Mono
     {
         "class": "sidebar_label",
         "settings": ["theme_autumn_roboto_font"],       
-        "font.face": "Roboto Mono",
-        
+        "font.face": "Roboto Mono"
+    },
+
+     // Sidebar entry with Fira Mono
+    {
+        "class": "sidebar_label",
+        "settings": ["theme_autumn_fira_font"],       
+        "font.face": "Fira Mono"
     },
     // Sidebar folder entry
     {
         "class": "sidebar_label",
         "parents": [{"class": "tree_row", "attributes": ["hover"]}],
-        "color": [210, 204, 222],
+        "color": [173, 162, 191],
         "shadow_color": [0, 0, 0],
         "shadow_offset": [0, 0]
     },
@@ -855,14 +852,14 @@
     {
         "class": "sidebar_label",
         "parents": [{"class": "tree_row", "attributes": ["expandable"]}],
-        "color": [181, 176, 191],
+        "color": [130, 127, 138],
         "shadow_color": [0, 0, 0],
         "shadow_offset": [0, 0]
     },
     {
         "class": "sidebar_label",
         "parents": [{"class": "tree_row", "attributes": ["hover"]}],
-        "color": [210, 204, 222]
+        "color": [173, 162, 191]
     },
     {
         "class": "sidebar_label",
@@ -874,8 +871,8 @@
     {
         "class": "sidebar_label",
         "parents": [{"class": "tree_row", "attributes": ["selected"]}],
-        "color": [189, 178, 210],
-        "shadow_color": [0, 0, 0],
+        "color": [173, 162, 191],
+        "shadow_color": [0, 0, 0],   
         "shadow_offset": [0, 0]
     },
 
@@ -884,11 +881,11 @@
         "class": "close_button",
         "layer0.texture": "Theme - Autumn/Theme - Classic/light_x.png",
         "layer0.opacity": 0.0,
-        "layer0.inner_margin": 0,
+        "layer0.inner_margin": 3,
         "layer1.texture":  "Theme - Autumn/Theme - Classic/light_x_bright.png",
         "layer1.opacity": 0.0,
-        "layer1.inner_margin": 0,
-        "content_margin": [8, 8]
+        "layer1.inner_margin": 3,
+        "content_margin": [8, 8]         
     },
     { 
         "class": "close_button",
@@ -910,14 +907,15 @@
         "class": "close_button",
         "attributes": ["dirty"],
         "layer0.texture": "Theme - Autumn/images/file-dirty.png",
-        "layer0.opacity": 1.0
+        "layer0.opacity": 1.0 
     },
     {
         "class": "close_button",
         "attributes": ["dirty"],
         "parents": [{"class": "tree_row", "attributes": ["selected"]}],
         "layer0.texture": "Theme - Autumn/images/file-dirty-selected.png",
-        "layer1.opacity": 0.0
+        "layer1.opacity": 0.0,
+        "content_margin": [8, 8] 
     },   
 
     // Sidebar file close hover
@@ -928,63 +926,156 @@
     },
 
 
-    // Sidebar group closed
-    {
-        "class": "disclosure_button_control",
-        "content_margin": [0, 6, 18, 7],
+    // Folder icons
+
+   {
+        "class": "icon_folder",
         "layer0.texture": "Theme - Autumn/images/group-closed.png",
-        "layer0.opacity": 1.0,
-        "layer0.inner_margin": 0,
-        
- 
+        "layer0.opacity": 1,
+        "content_margin": [10, 9, 11, 9],
     },
+    
+    {
+        "class": "icon_folder",
+        "parents": [{"class": "tree_row", "attributes": ["expanded"]}],
+        "layer0.texture": "Theme - Autumn/images/group-open.png",
+        // "content_margin": [9, 8]
+    },
+
+      {
+      "class": "icon_folder_loading",
+      "layer0.texture":
+      {
+        "keyframes":
+        [
+          "Theme - Autumn/images/loader8.png",
+          "Theme - Autumn/images/loader7.png",
+          "Theme - Autumn/images/loader6.png",
+          "Theme - Autumn/images/loader5.png",
+          "Theme - Autumn/images/loader4.png",
+          "Theme - Autumn/images/loader3.png",
+          "Theme - Autumn/images/loader2.png",
+          "Theme - Autumn/images/loader1.png",
+          "Theme - Autumn/images/loader.png",
+          "Theme - Autumn/images/loader1.png",
+          "Theme - Autumn/images/loader2.png",
+          "Theme - Autumn/images/loader3.png",
+          "Theme - Autumn/images/loader4.png",
+          "Theme - Autumn/images/loader5.png",
+          "Theme - Autumn/images/loader6.png",
+          "Theme - Autumn/images/loader7.png",
+          "Theme - Autumn/images/loader8.png",
+        ],
+        "loop": true,
+        "frame_time": 0.085,
+      },  
+      "layer0.opacity": 1.0,
+      "content_margin": [10, 9, 11, 9],
+    },
+
+    // symlink folder
+
+    {
+        "class": "icon_folder_dup",
+        "layer0.texture": "Theme - Autumn/images/symlink.png",
+        "layer0.opacity": 1.0,
+        "content_margin": [10, 9, 11, 9],
+    },
+   
 
     // Sidebar group open
     {
-        "class": "disclosure_button_control",
-        "attributes": ["expanded"],
+        "class": "icon_folder",
+        "parents": [{"class": "tree_row", "attributes": ["expanded"]}],
         "layer0.texture": "Theme - Autumn/images/group-open.png"
     },
 
     {
-        "class": "disclosure_button_control",
+        "class": "icon_folder",
         "settings":["theme_autumn_orange_folders"],
         "layer0.texture": "Theme - Autumn/images/group-closed-orange.png",
     },
 
      {
-        "class": "disclosure_button_control",
+        "class": "icon_folder",
         "settings":["theme_autumn_orange_folders"],
-        "attributes": ["expanded"],
+        "parents": [{"class": "tree_row", "attributes": ["expanded"]}],
         "layer0.texture": "Theme - Autumn/images/group-open-orange.png"
     },
 
     {
-        "class": "disclosure_button_control",
+        "class": "icon_folder",
         "settings":["theme_autumn_rose_folders"],
         "layer0.texture": "Theme - Autumn/images/group-closed-rose.png",
     },
 
      {
-        "class": "disclosure_button_control",
+        "class": "icon_folder",
         "settings":["theme_autumn_rose_folders"],
-        "attributes": ["expanded"],
+        "parents": [{"class": "tree_row", "attributes": ["expanded"]}],
         "layer0.texture": "Theme - Autumn/images/group-open-rose.png"
     },
 
 
     {
-        "class": "disclosure_button_control",
+        "class": "icon_folder",
         "settings":["theme_autumn_gray_folders"],
         "layer0.texture": "Theme - Autumn/images/group-closed-gray.png",
     },
 
      {
-        "class": "disclosure_button_control",
+        "class": "icon_folder",
         "settings":["theme_autumn_gray_folders"],
-        "attributes": ["expanded"],
+       "parents": [{"class": "tree_row", "attributes": ["expanded"]}],
         "layer0.texture": "Theme - Autumn/images/group-open-gray.png"
-    },       
+    }, 
+    
+
+    // yellow
+    {
+        "class": "icon_folder",
+        "settings":["theme_autumn_yellow_folders"],
+        "layer0.texture": "Theme - Autumn/images/group-closed-yellow.png",
+    },
+
+     {
+        "class": "icon_folder",
+        "settings":["theme_autumn_yellow_folders"],
+        "parents": [{"class": "tree_row", "attributes": ["expanded"]}],
+        "layer0.texture": "Theme - Autumn/images/group-open-yellow.png"
+    },
+
+    // birch
+
+    // {
+    //     "class": "icon_folder",
+    //     "settings":["theme_autumn_birch_folders"],
+    //     "layer0.texture": "Theme - Autumn/images/group-closed-birch.png",
+    // },
+
+    //  {
+    //     "class": "icon_folder",
+    //     "settings":["theme_autumn_birch_folders"],
+    //     "parents": [{"class": "tree_row", "attributes": ["expanded"]}],
+    //     "layer0.texture": "Theme - Autumn/images/group-open-birch.png"
+    // }, 
+
+    // gray2
+
+    {
+        "class": "icon_folder",
+        "settings":["theme_autumn_gray2_folders"],
+        "layer0.texture": "Theme - Autumn/images/group-closed-gray2.png",
+    },
+
+     {
+        "class": "icon_folder",
+        "settings":["theme_autumn_gray2_folders"],
+        "parents": [{"class": "tree_row", "attributes": ["expanded"]}],
+        "layer0.texture": "Theme - Autumn/images/group-open-gray2.png"
+    },            
+        
+        
    
 
 //
@@ -1027,46 +1118,7 @@
     },
    
     
-//
-    // FLAT Standard buttons (used for Find / Replace panel)
-    // {
-    //     "class": "button_control",
-    //     "settings":["theme_autumn_flat_buttons"],
-    //     "content_margin": [10, 10],
-    //     "min_size": [89, 0],
-    //     // Default button state
-    //     "layer0.texture": "",
-    //     "layer0.tint": [65, 65, 65],
-    //     "layer0.opacity": 1.0,
-    //     "layer0.inner_margin": [10, 10],
-    //     // Pressed button setup
-    //     "layer1.texture": "",
-    //     "layer1.tint": [56, 56, 56],
-    //     "layer1.opacity": { "target": 0.0, "speed": 2.5, "interpolation": "smoothstep" },
-    //     "layer1.inner_margin": [10, 10],
-    //     "layer2.texture": "",
-    //     "layer2.tint": [65, 65, 65],
-    //     "layer2.opacity": { "target": 0.0, "speed": 2.5, "interpolation": "smoothstep" },
-    //     "layer2.inner_margin": [10, 10]
-    // },
 
-    // {
-    //     "class": "button_control",
-    //     "attributes": ["hover"],
-    //     "layer0.opacity": 0,
-    //     "layer1.opacity": 1.0,
-    //     "layer2.opacity": 0
-    // },
-    // {
-    //     "class": "button_control",
-    //     "attributes": ["pressed"],
-    //     "layer0.opacity": 0,
-    //     "layer1.opacity": 0,
-    //     "layer2.opacity": 1.0
-    // },
-   
-    
-//
 
 // PANEL BACKGROUNDS
 
@@ -1080,16 +1132,7 @@
         "layer0.opacity": 1.0
     },
 
-    // // FLAT Bottom panel background
-    // {
-    //     "class": "panel_control",
-    //     "settings":["theme_autumn_flat_buttons"],
-    //     "layer0.texture":"",
-    //     "layer0.tint": [45,45,45],
-    //     "layer0.inner_margin": [2, 2, 2, 5],
-    //     "layer0.opacity": 1.0
-    // },
-
+  
 
     // Quick panel background
     {
@@ -1232,35 +1275,7 @@
         "attributes": ["selected"],
         "layer2.opacity": 1.0
     },
-
-
-// FLAT BOTTOM PANEL BUTTONS
-
-    
-    // {
-    //     "class": "icon_button_control",
-    //     "settings":["theme_autumn_flat_buttons"],
-    //     "layer0.texture":"",
-    //     "layer0.tint": [45,45,45],
-    //     "layer0.opacity":1.0,     
-    //     "content_margin": [8, 8]
-
-    // },      
-    // {
-    //     "class": "icon_button_control",
-    //    "settings":["theme_autumn_flat_buttons"],
-    //     "layer2.texture":"",
-    //     "layer2.tint": [45,45,45],
-    //     "layer2.opacity": { "target": 0.0, "speed": 3, "interpolation": "smoothstep" }       
-    // },
-    //  {
-    //     "class": "icon_button_control",
-    //     "settings":["theme_autumn_flat_buttons"],
-    //     "attributes": ["selected"],
-    //     "layer2.opacity": 1.0
-    // },
-
-   
+  
     
 // BOTTOM PANEL ICONS - GROUP 1
 
