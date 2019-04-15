@@ -1,0 +1,25 @@
+-------------------------------------------------------
+Version: 1.3.6
+https://packagecontrol.io/packages/Theme%20-%20Autumn
+-------------------------------------------------------
+
+- Changed sidebar icons and spacing
+
+- Do you like the themes and color schemes?
+
+  If you would like to buy me a coffee or a beer, you can do so through the following link:
+
+  https://www.paypal.me/DiegoAz
+
+  THANKS :)
+
+  This link is also available on the package web: 
+
+  https://packagecontrol.io/packages/Theme%20-%20Autumn
+
+- GITTER CHAT - ISSUES
+
+  If you have any suggestion to improve it visit the issues page or the gitter chat.
+
+  https://github.com/DiegoAz/Theme-Autumn/issues
+  https://gitter.im/Theme-Autumn/Lobby
