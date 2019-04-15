@@ -167,21 +167,7 @@
         "layer1.texture": "Theme - Autumn/Theme - Classic/dark_tabset_background_transparent.png"
     },
 
-    // remove icons
-
-    {
-        "class": "icon_file_type",
-        "content_margin": [0,0]
-    },
-    {
-        "class": "icon_folder",
-        "content_margin": [0,0]
-    },
-    {
-        "class": "icon_folder_loading",
-        "content_margin": [0,0]
-    },
-
+    
     {
         "class": "icon_use_buffer",
         "layer0.texture": "Theme - Autumn/images/icons/use_buffer.png",
@@ -609,7 +595,7 @@
 
     {
         "class": "sheet_container_control",
-        "layer0.tint": [31, 31, 31],
+        "layer0.tint": [28,22,18],
         "layer0.opacity": 1.0
     },
 
@@ -797,7 +783,7 @@
     //Sidebar tree
     {
         "class": "sidebar_tree",
-        "row_padding": [19,10],
+        "row_padding": [19,8],
         "indent": 20,
         "indent_offset": 0,
         "indent_top_level": false,
@@ -890,15 +876,15 @@
     // Sidebar file close
     {
         "class": "close_button",
-        "layer0.texture": "Theme - Autumn/Theme - Classic/light_x.png",
+        "layer0.texture": "Theme - Autumn/Theme - Classic/light_x-sidebar.png",
         "layer0.opacity": 0.0,
         "layer0.inner_margin": 0,
-        "layer1.texture":  "Theme - Autumn/Theme - Classic/light_x_bright.png",
+        "layer1.texture":  "Theme - Autumn/Theme - Classic/light_x_bright-sidebar.png",
         "layer1.opacity": 0.0,
-        "layer1.inner_margin": 0,
-        "content_margin": [8, 8]
+        "layer1.inner_margin": 1,
+        "content_margin": [8, 8]         
     },
-    {
+    { 
         "class": "close_button",
         "parents": [{"class": "tree_row", "attributes": ["hover"]}],
         "layer0.opacity": 1.0,
@@ -908,7 +894,7 @@
         "class": "close_button",
         "parents": [{"class": "tree_row", "attributes": ["hover", "selected"]}],
         "layer0.opacity": 0.0,
-        "layer1.opacity": 1.0 
+        "layer1.opacity": 1.0
     },
 
 
@@ -917,27 +903,25 @@
     {
         "class": "close_button",
         "attributes": ["dirty"],
-        "layer0.texture": "Theme - Autumn/images/file-dirty.png",
+        "layer0.texture": "Theme - Autumn/images/file-dirty-sidebar.png",
         "layer0.opacity": 1.0  
     },
     {
         "class": "close_button",
         "attributes": ["dirty"],
         "parents": [{"class": "tree_row", "attributes": ["selected"]}],
-        "layer0.texture": "Theme - Autumn/images/file-dirty-selected.png",
-        "layer1.opacity": 0.0
-    },
-   
+        "layer0.texture": "Theme - Autumn/images/file-dirty-selected-sidebar.png",   
+        "layer1.opacity": 0.0,
+        "content_margin": [8, 8]  
+    },   
 
-
-
-
-    //Sidebar file close hover
+    // Sidebar file close hover
     {
         "class": "close_button",
         "attributes": ["hover"],
-        "layer0.texture":  "Theme - Autumn/Theme - Classic/light_x_bright.png",
+        "layer0.texture":  "Theme - Autumn/Theme - Classic/light_x_bright-sidebar.png"
     },
+
 
 
    // Folder icons
@@ -946,14 +930,14 @@
         "class": "icon_folder",
         "layer0.texture": "Theme - Autumn/images/group-closed.png",
         "layer0.opacity": 1,
-        "content_margin": [10, 9, 11, 9],
+       "content_margin": [11,9, 10,9],
     },
     
     {
         "class": "icon_folder",
         "parents": [{"class": "tree_row", "attributes": ["expanded"]}],
         "layer0.texture": "Theme - Autumn/images/group-open.png",
-        // "content_margin": [9, 8]
+        "content_margin": [11,9, 10,9],
     },
 
     {
@@ -984,7 +968,7 @@
         "frame_time": 0.085,
       },  
       "layer0.opacity": 1.0,
-      "content_margin": [10, 9, 11, 9],
+      "content_margin": [11,9, 10,9],
     },
 
     // symlink folder
@@ -993,7 +977,7 @@
         "class": "icon_folder_dup",
         "layer0.texture": "Theme - Autumn/images/symlink.png",
         "layer0.opacity": 1.0,
-        "content_margin": [10, 9, 11, 9],
+        "content_margin": [11,9, 10,9],
     },
     
    

@@ -22,18 +22,18 @@ $popupCss = "html{background-color:#261E33;color:#B1886C;padding:16px;}a{color: 
 // COLORS
 
 $col0  = #f58f00 // brackethighlighter plugin
-$col1  = desaturate(#CB7C0C, 26%) // functions
-$col2  = desaturate(#CB8B08, 28%) // keyword
-$col3  = desaturate(#AA6089, 5%) // string
+$col1  = desaturate(#D8840D, 30%) // functions
+$col2  = desaturate(#CB8B08, 30%) // keyword
+$col3  = desaturate(#AA6089, 0%) // string
 $col4  = darken($col3, 25%) // string punctuations
-$col5  = desaturate(#A1A01E, 25%) // html tags
+$col5  = desaturate(#AEAD20, 30%) // html tags
 $col6  = darken($col5, 20%) // html tags punctuation
-$col7  = desaturate(#C8A11C, 22%) // html/css class, id
-$col8  = desaturate(#AB6179, 5%) // constant
-$col9  = darken($col8, 16%) // css string punctuation
-$col10 = #B17041 // general punctuation, xml tags
-$col11 = #B1794F // xml punctuation
-$col12 = #B1886C // source, variable
+$col7  = desaturate(#C8A11C, 25%) // html/css class, id
+$col8  = desaturate(#AB6179, 0%) // constant
+$col9  = darken($col8, 10%) // css string punctuation
+$col10 = saturate(#B17041, 25%) // general punctuation, xml tags
+$col11 = saturate(#B1794F, 25%) // xml punctuation
+$col12 = saturate(#B1886C, 25%) // source, variable
 $col13 = desaturate(#D7365A, 5%) // invalid background
 $col14 = #f2e088 // deprecated background
 $col15 = lighten(#222027, 35%) // java annotations
@@ -41,6 +41,7 @@ $col16 = lighten(#222027, 35%); // comments
 $col17 = #242424 // invalid,deprecated foreground
 $col18 = desaturate(#AA6089, 0%)
 $col19 = desaturate(#D7365A, 5%)
+$col20 = lighten(#AB6179, 8%)
 
 
 brackethighlighter.default, brackethighlighter.unmatched {
@@ -188,7 +189,7 @@ markup.untracked.git_gutter {
 }
 
 keyword.other.unit, constant.other.color.rgb-value punctuation.definition.constant, punctuation.definition.string.begin.css, punctuation.definition.string.end.css {
-  foreground: $col9;
+  foreground: $col20;
 }
 
 keyword.operator {
@@ -242,6 +243,16 @@ support.constant {
 source.js support.type {
   foreground: $col5;
 }
+
+source.css support.type {
+  foreground: $col12;
+}
+  
+source.stylus support.type {
+  foreground: $col12;
+}
+
+
 
 constant.name.attribute.tag.pug {
   foreground: $col11;
